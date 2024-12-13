@@ -391,7 +391,7 @@ bottom: 10%;
 }   */
 
 .container {
-  background-image: url("./assets//image/bg.jpg");
+  /* background-image: url("./assets//image/bg.jpg"); */
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -446,14 +446,15 @@ bottom: 10%;
   align-items: center;
   gap: 0.5125rem;
   flex-shrink: 0;
-  
-  /* overflow: hidden; */
+  scrollbar-width: none;
+  overflow-y: auto;
   border-radius: 6.25rem;
   background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
   box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
   backdrop-filter: blur(35px);
   margin-left: 10px;
 }
+
 
 .dropdown {
   display: flex;
@@ -463,6 +464,7 @@ bottom: 10%;
   align-items: center;
   gap: 1.875rem;
   flex-shrink: 0;
+  
 }
 
 .button {
@@ -484,12 +486,12 @@ bottom: 10%;
   line-height: normal;
 }
 
-.earth {
+.keck {
   width: 100%;
   height: 300px;
   
 }
-.sun {
+.paranal {
   width: 100%;
   height: 300px; 
 }
@@ -499,7 +501,7 @@ bottom: 10%;
   height: 300px; 
 }
 
-.earthcard {
+.keckcard {
   display: flex;
   width: 28.125rem;
   height: 15.625rem;
@@ -516,7 +518,7 @@ bottom: 10%;
   margin-left: 20px;
   margin-top: 50px;
 }
-.suncard {
+.paranalcard {
   display: flex;
   width: 28.125rem;
   height: 15.625rem;
@@ -552,7 +554,7 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
 }
 
 .tittle {
-  width: 6.75rem;
+  width: auto;
   height: 3.625rem;
   text-shadow: 0px 3px 9px rgba(0, 56, 255, 0.50);
   font-family: "FONTSPRING DEMO - Oktah Round Bold";
@@ -568,7 +570,7 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   left: 1.875rem;
   top: 0.0625rem;
 }
-.suncard> .tittle{
+.paranalcard> .tittle{
   width: 6.75rem;
   height: 3.625rem;
   text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
@@ -616,7 +618,7 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   font-weight: 700;
   line-height: normal;
 }
-.suncard> .moreinfo {
+.paranalcard> .moreinfo {
   width: 23.4375rem;
   position: absolute;
   left: 1.875rem;
@@ -657,7 +659,7 @@ font-size: 1.0625rem;
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
-.suncard>.moreinfo> .lighttext{
+.paranalcard>.moreinfo> .lighttext{
   color: #FFA800;
   font-family: Inter;
   font-size: 1.0625rem;
@@ -701,7 +703,7 @@ font-size: 1.0625rem;
   background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
   box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
 }
-.suncard> div>.explorebutton{
+.paranalcard> div>.explorebutton{
   display: flex;
   width: 16.25rem;
   height: 3.125rem;
@@ -755,12 +757,13 @@ font-size: 1.0625rem;
 
 .content-img {
   width: 9.375rem;
-  height: 9.375rem;
+  height: 9rem;
   position: absolute;
   top: 80px;
-  right: 50px;
+  right: 35px;
+  border-radius: 20px;
 }
-.sun> .content-img{
+.paranal> .content-img{
 width: 300px;
   height: 300px;
   position: absolute;
@@ -788,4 +791,18 @@ width: 300px;
   background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
   box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
   backdrop-filter: blur(35px);
+}
+/* Đặt kiểu dáng cho ảnh */
+.marscard .wrapicon img {
+  position: absolute; /* Đặt hình ở vị trí tuyệt đối */
+  top: 10px; /* Đặt khoảng cách từ mép trên */
+  right: 10px; /* Đặt khoảng cách từ mép phải */
+  width: 50px; /* Giảm kích thước ảnh */
+  height: auto; /* Giữ tỉ lệ khung hình */
+  border-radius: 8px; /* Tùy chọn góc bo tròn nếu cần */
+}
+
+/* Đảm bảo "wrapicon" có vị trí tương đối để ảnh nằm trong giới hạn của nó */
+.marscard .wrapicon {
+  position: relative;
 }

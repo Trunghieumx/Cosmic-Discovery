@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css"; // Đừng quên thêm CSS vào file này
 import logo from "./assets/image/đài quan sát 1.png";
 import img1 from "./assets/image/KeckObservatory.jpg";
-// import img2 from "./assets/image/Paranal.jpg";
+import img2 from "./assets/image/Paranal.jpg";
 import solar1 from "./assets/image/Sun.png"
 import solar2 from "./assets/image/Mercury.png"
 import solar3 from "./assets/image/Venus.png"
@@ -12,13 +12,29 @@ import solar6 from "./assets/image/Jupiter.png"
 import solar7 from "./assets/image/Saturn.png"
 import solar8 from "./assets/image/Uranus.png"
 import solar9 from "./assets/image/Neptune.png"
-// import img3 from "./assets/image/Arecibo.png"
+import img3 from "./assets/image/Arecibo.png"
 // import ic1 from "./assets/image/Home Icon.png"
 // import ic2 from "./assets/image/Search Icon.png"
 // import ic3 from "./assets/image/World Icon.png"
 // import ic4 from  "./assets/image/Map Icon.png"
 // import ic5 from  "./assets/image/Astronaut.png"
+import ic6 from "./assets/image/iconearth.png"
+import ic7 from "./assets/image/Vector.png"
+import Background from "./Background";
+// import bg from "./Background"
 
+
+// const  = () => {
+//   return (
+//     <div>
+//       <h2>Video Example</h2>
+//       <video width="600" controls>
+//         <source src="your-video-file.mp4" type="video/mp4" />
+//         Your browser does not support the video tag.
+//       </video>
+//     </div>
+//   );
+// };
 const App = () => {
   return (
     // <div className="app-container">
@@ -114,6 +130,7 @@ const App = () => {
     //   </div>
     // </div>
 <div className="container">
+<Background ></Background>
 
 <div className="solar-panel">
     <div className="solar-content">
@@ -150,10 +167,10 @@ const App = () => {
                 <div>
                     <div className='explorebutton'>
                         <div className='wrapicon'>
-                            <img src="./images/iconearth.png" />
+                            <img src={ic6} alt="icon" />
                         </div>
                         <div className='textfill'>EXPLORE</div>
-                        <img src='./images/Vector.png'></img>
+                        <img src={ic7} alt="vecto"></img>
                     </div>
 
                 </div>
@@ -161,9 +178,9 @@ const App = () => {
             <img  className='content-img' src={img1} alt="Keck"/>
         </div>
 
-        <div className='sun'>
-            <div className='suncard'>
-                <div className='tittle'>Sun</div>
+        <div className='paranal'>
+            <div className='paranalcard'>
+                <div className='tittle'>Paranal Observatory</div>
                 <div className='moreinfo'>
                     <span>The Sun orbits the </span>
                     <span className='lighttext'>Galactic Center</span>
@@ -174,15 +191,15 @@ const App = () => {
                 <div>
                     <div className='explorebutton'>
                         <div className='wrapicon'>
-                            <img src="./images/iconsun.png" />
+                            <img src={ic6} alt="icon"/>
                         </div>
                         <div className='textfill'>EXPLORE</div>
-                        <img src='./images/Vector.png'></img>
+                        <img src={ic7} alt="icon"></img>
                     </div>
 
                 </div>
             </div>
-            <img  className='content-img' src="./images/Suncard.png" />
+            <img  className='content-img' src={img2} alt="Paranal" />
         </div>
 
         <div className='mars'>
@@ -198,20 +215,20 @@ const App = () => {
                 <div>
                     <div className='explorebutton'>
                         <div className='wrapicon'>
-                            <img src="./images/iconmars.png" />
+                            <img src={ic6} alt="icon" />
                         </div>
                         <div className='textfill'>EXPLORE</div>
-                        <img src='./images/Vector.png'></img>
+                        <img src={ic7} alt="icon"></img>
                     </div>
 
                 </div>
             </div>
-            <img  className='content-img' src="./images/Marscard.png" />
+            <img  className='content-img' src={img3} alt="Arecibo" />
         </div>
     </div>
 
     <div className="infor">
-    <img src={logo}/>
+    <img src={logo} alt="dai quan sat"/>
     </div>
 
 </div>
