@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
   width: 1920px;
   height: 1080px;
@@ -11,6 +11,7 @@
   width: 100%;
   height: 100%;
   flex-shrink: 0;
+  position: relative;
   
 }
 .solar-panel {
@@ -80,10 +81,14 @@
 .main-content {
   display: flex;
   margin-top: 20px;
+  width: 610px;
+  height:  750px;
+  margin-top: 20px;
+
 }
 
 /* Sidebar styles */
-.sidebar {
+/* .sidebar {
   color: "white";
   font-size: 19;
   font-family: "Inter";
@@ -100,6 +105,7 @@
 
   padding: 1px 5px;
   flex-direction: column;
+  
   align-items: center;
   gap: 32px;
 
@@ -117,6 +123,7 @@
 }
 
 .filter-section {
+  display: flex;
   margin-bottom: 20px;
 }
 
@@ -156,7 +163,7 @@
 }
 .observatories {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   gap: 20px;
 
 }
@@ -233,10 +240,10 @@
 font-size: 25px;
 font-style: normal;
 font-weight: 700;
-line-height: 20px; /* 80% */
-  }
+line-height: 20px;} /* 80% */
+  
 
-.paranal-card {
+/* .paranal-card {
   display: flex;
   width: 450px;
   height: 300px;
@@ -287,6 +294,29 @@ left: 1px;
   bottom: 205px;
   left: 387.87px;
 }
+.arecibo-card{
+  display: flex;
+  width: 450px;
+  height: 300px;
+  padding: 5px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 3px solid #2369B8;
+  background: rgb(0075FF, 0066FF, 000000);
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  backdrop-filter: blur(20px);
+  position: relative;
+  right: 25px;
+  top: 15px;
+ 
+}
+.arecibo-image{
+  width: 189.513px;
+  height: 132.558px;
+}
 .explore-button {
   display: flex;
   justify-content: center;
@@ -306,15 +336,15 @@ left: 1px;
 font-size: 25px;
 font-style: normal;
 font-weight: 700;
-line-height: 20px; /* 80% */
-}
+line-height: 20px;} /* 80% */
 
-.explore-button .explore-button1:hover {
+
+/* .explore-button .explore-button1:hover {
   background: #008fcc;
-}
+} */
 
 /* Main Image Section */
-.image-section {
+/* .image-section {
   flex: 1;
   margin-left: 20px;
   display: flex;
@@ -330,3 +360,432 @@ line-height: 20px; /* 80% */
   position: relative;
   left: 75px;
 } 
+.navbar{
+  display: flex;
+  width: 620px;
+  height: 90px;
+  padding: 2.5px 12.5px 2.5px 10.5px;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-shrink: 0;
+  border-radius: 100px;
+background: rgba(36, 35, 41, 0.60);
+mix-blend-mode: hard-light;
+box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.19) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90) inset;
+backdrop-filter: blur(20px);
+margin-top: 30px;
+
+left: 50%;
+bottom: 10%;
+-ms-transform-origin-x: translate(50%);
+}
+.icon1{
+  position: relative;
+  right: 200px;
+  
+}
+.icon2{
+  position: relative;
+  right: 100px;
+}   */
+
+.container {
+  background-image: url("./assets//image/bg.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.solar-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+  width: 38.125rem;
+  margin-left: 10px;
+
+}
+
+.solar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 1;
+}
+
+.orbit {
+  position: absolute;
+  border-top: 2px rgba(255, 255, 255, 0.69) solid;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 0;
+
+}
+
+.content-container {
+
+  display: flex;
+  gap: 20px;
+}
+
+.explore {
+  display: flex;
+  width: 38.125rem;
+  height: 46.875rem;
+  padding: 0.3125rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5125rem;
+  flex-shrink: 0;
+  
+  /* overflow: hidden; */
+  border-radius: 6.25rem;
+  background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
+  box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
+  backdrop-filter: blur(35px);
+  margin-left: 10px;
+}
+
+.dropdown {
+  display: flex;
+  width: 38.125rem;
+  height: 5.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+  flex-shrink: 0;
+}
+
+.button {
+  display: flex;
+  width: 12rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4375rem;
+  flex-shrink: 0;
+  border-radius: 31.25rem;
+  background: rgba(0, 0, 0, 0.50);
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.earth {
+  width: 100%;
+  height: 300px;
+  
+}
+.sun {
+  width: 100%;
+  height: 300px; 
+}
+
+.mars {
+  width: 100%;
+  height: 300px; 
+}
+
+.earthcard {
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.suncard {
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.marscard {
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #E43913;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(255, 122, 0, 0.00) 0%, rgba(255, 61, 0, 0.15) 50%, rgba(255, 122, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.tittle {
+  width: 6.75rem;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(0, 56, 255, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #2AE5FF 31.03%, #0075FF 79.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+.suncard> .tittle{
+  width: 6.75rem;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+.marscard> .tittle{
+  width: 6.75rem;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.moreinfo {
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.suncard> .moreinfo {
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.marscard> .moreinfo {
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.lighttext {
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.suncard>.moreinfo> .lighttext{
+  color: #FFA800;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+.marscard>.moreinfo> .lighttext{
+  color: #FFA800;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.explorebutton {
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+.suncard> div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #F6E336 0%, #E48413 100%);
+  box-shadow: 0px 4px 10px 2px rgba(255, 153, 0, 0.40);
+}
+.marscard> div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #F6E336 0%, #E48413 100%);
+  box-shadow: 0px 4px 10px 2px rgba(255, 153, 0, 0.40);
+}
+
+.textfill {
+  color: #FFF;
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  /* 80% */
+}
+
+.wrapicon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 3.125rem;
+  background: #FFF;
+}
+
+.content-img {
+  width: 9.375rem;
+  height: 9.375rem;
+  position: absolute;
+  top: 80px;
+  right: 50px;
+}
+.sun> .content-img{
+width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 300px;
+  right: -22px;
+}
+.mars> .content-img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 700px;
+  right: 40px;
+}
+
+.infor {
+  display: flex;
+  width: 72.875rem;
+  height: 46.875rem;
+  padding: 0.3125rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+  flex-shrink: 0;
+  border-radius: 6.25rem;
+  background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
+  box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
+  backdrop-filter: blur(35px);
+}
