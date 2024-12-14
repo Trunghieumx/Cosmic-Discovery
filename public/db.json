@@ -1,0 +1,24 @@
+{
+    "planetcard":[
+       
+        {"name":"Earth" , "title": "Earth is rounded into an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive..." },
+        {"name":"Sun" , "title": "The Sun orbits the Galactic Center at a distance of 24,000 - 28,000 light-years. From Earth, it is 1 astronomical unit or about 8 light-minutes away. Its diameter is about 109 times that of Earth..." },
+        {"name":"Mars" , "title": "The surface of Mars is orange-red because it is covered in iron(III) oxide dust, giving it the nickname 'the Red Planet'. Mars is among the brightest objects in Earth's sky, and a common subject for telescope viewing..." },
+        {"name":"Saturn" , "title": "The planet has a bright and extensive system of rings, composed mainly of ice particles, with a smaller amount of rocky debris and dust. At least 146 moons orbit the planet... "},
+        {"name":"Mercury" , "title": "Mercury is the closest planet to the Sun in the Solar System and also the smallest planet. It has no thick atmosphere, leading to a large temperature difference between day and night. Mercury's surface is covered with craters, similar to the Moon." },
+        {"name":"Uranus" , "title": "Uranus is the seventh planet from the Sun and has a pale blue color due to the methane in its atmosphere. It is the only planet in the Solar System that rotates almost horizontally to its orbital plane. Uranus has a thin ring system and is a gas giant with an icy core." },
+        {"name":"Venus" , "title": "Venus is the second planet from the Sun and is called Earth's twin sister because of its similar size and mass. However, Venus has a very dense atmosphere primarily made of carbon dioxide, making its surface extremely hot due to the greenhouse effect. Venus rotates in the opposite direction compared to most other planets." },
+        {"name":"Jupiter" , "title": "Jupiter is the largest planet in the Solar System and is primarily composed of hydrogen and helium. It is known for the Great Red Spot, a massive storm that has lasted for hundreds of years. Jupiter has over 79 known moons, including major ones like Io, Europa, Ganymede, and Callisto." },
+        {"name":"Neptune" , "title": "Neptune is the farthest planet from the Sun and has a deep blue color due to the methane in its atmosphere. It is a gas giant with extremely strong storms, including the Great Dark Spot, similar to Jupiter's Great Red Spot. Neptune has a faint ring system and 14 known moons, with Triton being the largest." }
+    
+    ],
+        
+    "bigbang":[
+        {"heading":"Basic Concept", "content":"The Big Bang theory proposes that the universe began from an extremely small, hot, and dense singularity approximately 13.8 billion years ago. From this singularity, the universe underwent a process of expansion and gradual cooling."},
+        {"heading":"The Process", "content":"Planck Era: This was the earliest moment after the Big Bang, where current physical laws are insufficient to accurately describe the phenomena. Inflation Era: The universe underwent a very rapid and sudden expansion, smoothing out initial irregularities in its structure. Quark and Lepton Formation: Fundamental particles like quarks and leptons began to form from the extremely high energy of the universe. Proton and Neutron Formation: Quarks combined to form protons and neutrons, the nuclei of atoms. The Era of First Light (around 380,000 years after the Big Bang): Atoms began to form as electrons combined with nuclei, allowing photons to move freely and illuminate the universe."},
+        {"heading":"Supporting Evidence", "content":"Cosmic Microwave Background Radiation (CMB): This is the residual radiation from the time when the universe became transparent, first discovered in 1965, and is considered strong evidence supporting the Big Bang theory. Expansion of the Universe: Edwin Hubble's 1929 study showed that galaxies are moving away from each other, consistent with the Big Bang theory's prediction of an expanding universe. Light Element Composition: The distribution and ratios of elements like hydrogen and helium in the universe align with predictions from the Big Bang model."},
+        {"heading":"Continuous Expansion", "content":"The universe is still expanding, and scientists use modern technologies such as telescopes and satellites to study its development over time. Some modern research focuses on gaining a better understanding of dark energy and dark matter, two mysterious components in the current cosmological model. The Big Bang theory not only provides a perspective on the origin of the universe but also opens up new research directions, helping us gain deeper insights into the structure and evolution of the cosmos."}
+    ]
+
+    
+}

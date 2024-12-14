@@ -1,0 +1,29 @@
+.solar-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+    width: 38.125rem;
+    margin-left: 50px;
+
+}
+
+.solar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.orbit {
+    position: absolute;
+    border-top: 2px rgba(255, 255, 255, 0.69) solid;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 0;
+
+}

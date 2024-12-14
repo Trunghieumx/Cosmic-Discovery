@@ -1,0 +1,110 @@
+.earth {
+    margin-top: 10px;
+    width: 100%;
+    height: 300px;   
+}
+.earthcard {
+    display: flex;
+    width: 28.125rem;
+    height: 15.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 1.875rem;
+    border: 3px solid #2369B8;
+    background: rgba(0, 0, 0, 0.60);
+    backdrop-filter: blur(20px);
+    border-radius: 1.25rem;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.earthcard:hover{
+    background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+}
+.tittle {
+    width: 6.75rem;
+    height: 3.625rem;
+    text-shadow: 0px 3px 9px rgba(0, 56, 255, 0.50);
+    font-family: "FONTSPRING DEMO - Oktah Round Bold";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #2AE5FF 31.03%, #0075FF 79.31%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 1.875rem;
+    top: 0.0625rem;
+}
+.moreinfo {
+    width: 23.4375rem;
+    position: absolute;
+    left: 1.875rem;
+    top: 3.6875rem;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.lighttext {
+    color: #00A3FF;
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.explorebutton {
+    display: flex;
+    width: 16.25rem;
+    height: 3.125rem;
+    padding: 0.3125rem;
+    padding-left: 12px;
+    align-items: center;
+    gap: 1.25rem;
+    position: absolute;
+    left: 1.875rem;
+    bottom: 0.9375rem;
+    border-radius: 6.25rem;
+    background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+    box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+.textfill {
+    color: #FFF;
+    font-family: "FONTSPRING DEMO - Oktah Round Bold";
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+    /* 80% */
+}
+.wrapicon {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: #FFF;
+}
+
+.content-img {
+    width: 9.375rem;
+    height: 9.375rem;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
