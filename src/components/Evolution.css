@@ -1,0 +1,36 @@
+.evolution{
+    border-radius: 6.25rem;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 46.875rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+.evolution::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    position: absolute;
+    background: transparent;
+  }
+  
+  .evolution::-webkit-scrollbar-thumb {
+    background: #FF9900; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid #ffffff; /* Optional: Add a border around the thumb */
+    margin-left: -10px;
+  }
+  
+  .bigbang::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Color of the track */
+    border-radius: 10px; /* Rounded corners for the track */
+    margin-left: -10px;
+  }
+  .bigbang::-webkit-scrollbar-thumb:hover {
+    background: #FF6600; /* Change color on hover */
+}
