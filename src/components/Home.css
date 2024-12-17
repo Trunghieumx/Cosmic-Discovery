@@ -93,6 +93,11 @@
     font-weight: 600;
     line-height: normal;
 }
+.button:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
 
 .infor {
     box-sizing: border-box;

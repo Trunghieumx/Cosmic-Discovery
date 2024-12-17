@@ -13,7 +13,7 @@ function Navbar() {
                 <Link to="/sun" ><img src="./images/Map Icon.png" alt="map" /></Link>
                 <Link to="/about" ><img src="./images/Astronaut Icon.png" alt="about" /></Link>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path='/'/>
                     <Route path="/planet" element={<EarthCard />} />
                     <Route path="/sun" element={<SunCard />} />
                 </Routes>
