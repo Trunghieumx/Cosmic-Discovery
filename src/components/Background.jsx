@@ -1,4 +1,4 @@
-import img from "./assets/image/bg.mp4"
+import img from "../assets/image/bg.mp4"
 import "./Background.css"
 function Background() {
     return (

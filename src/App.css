@@ -1,398 +1,5 @@
-/* .App {
-  text-align: center;
-  width: 1920px;
-  height: 1080px;
-}
-.app-container {
-  font-family: Arial, sans-serif;
-  background: url("./assets/image/bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  flex-shrink: 0;
-  position: relative;
-  
-}
-.solar-panel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 100px;
-  width: 38.125rem;
-  margin-left: 10px;
-  left: 20px;
-}
-.sc1 {
-  position: relative;
-  top: 18px;
-  right: 50px;
-}
-.sc2{
-  position: relative;
-  right: 130px;
-}
-.sc3{
-  position: relative;
-  right: 120px;
-}
-.sc4{
-  position: relative;
-  right: 100px;
-}
-.sc5{
-  position: relative;
-  right: 90px;
-}
-.sc6{
-  position: relative;
-  right: 80px;
-}
-.sc7{
-  position: relative;
-  right: 60px;
-}
-.sc8{
-  position: relative;
-  right: 50px;
-}
-.sc9{
-  position: relative;
-  right: 25px;
-}
-.solar-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  z-index: 1;
-}
-.orbit {
-  position: absolute;
-  border-top: 2px rgba(255, 255, 255, 0.69) solid;
-  width: 500px;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: 0;
-
-}
-.main-content {
-  display: flex;
-  margin-top: 20px;
-  width: 610px;
-  height:  750px;
-  margin-top: 20px;
-
-}
-
-/* Sidebar styles */
-/* .sidebar {
-  color: "white";
-  font-size: 19;
-  font-family: "Inter";
-  font-weight: "600";
-  word-wrap: "break-word";
-  display: flex;
-  width: 610px;
-  height: 750px;
-  justify-content: center;
-  align-items: center;
-
-  flex-shrink: 0;
-  border-radius: 100px;
-
-  padding: 1px 5px;
-  flex-direction: column;
-  
-  align-items: center;
-  gap: 32px;
-
-  background: linear-gradient(
-    127deg,
-    rgba(0, 0, 0, 0.6) 6.79%,
-    rgba(36, 35, 41, 0.6) 93.21%
-  );
-  box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.6) inset,
-    4px 4px 4px 0px rgba(255, 255, 255, 0.5) inset,
-    0px 20px 50px 0px rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(35px);
-  position: relative;
-  left: 60px;
-}
-
-.filter-section {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.dropdown {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.dropdown-1 {
-  display: flex;
-  width: 200px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 500px;
-  background: rgba(0, 0, 0, 0.5);
-  flex-direction: column;
-  font-weight: bold;
-  color: white;
-}
-.dropdown-2 {
-  display: flex;
-  width: 200px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-shrink: 0;
-  border-radius: 500px;
-  background: rgba(0, 0, 0, 0.5);
-  flex-direction: column;
-  font-weight: bold;
-  color: white;
-  margin-left: 10px;
-}
-.observatories {
-  display: flex;
-  flex-direction:column;
-  gap: 20px;
-
-}
-
-.keck-card {
-  display: flex;
-  width: 450px;
-  height: 300px;
-  padding: 5px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 30px;
-  border: 3px solid #2369B8;
-  background: rgba(0, 0, 0, 0.60);
-  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
-  backdrop-filter: blur(20px);
-  position: relative;
-  right: 25px;
-}
-
-.keck-image {
-  width: 189.513px;
-  height: 132.558px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  position: absolute;
-  bottom: 205px;
-  left: 387.87px;
-}
-
-.keck-info h1 {
-  display: flex;
-  width: 450px;
-  height: 300px;
-  padding: 5px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
- position: relative;
- bottom: 0px;
- left: 60px;
- color: #61dafb;
- font-size:'20';
- font-weight: bold;
- 
-}
-.keck-info p {
-  display: flex;
-  position: relative;
-  bottom: 250px;
-  color: #fff;
-  line-height: 2;
-  font-size: large;
-  
-}
-.explore-button1{
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  height: 50px;
-  padding: 6px 10px;
-  align-items: center;
-  gap: 45px;
-  border-radius: 100px;
-  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
-  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
-  color: white;
-    cursor: pointer;
-    position: absolute;
-    left: 20px;
-    bottom: 30px;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px;} /* 80% */
-  
-
-/* .paranal-card {
-  display: flex;
-  width: 450px;
-  height: 300px;
-  padding: 5px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 30px;
-  border: 3px solid #2369B8;
-  background: rgb(0075FF, 0066FF, 000000);
-  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
-  backdrop-filter: blur(20px);
-  position: relative;
-  right: 25px;
-  top: 15px;
-}
-.paranal-info h1 {
-  display: flex;
-  width: 450px;
-  height: 300px;
-  padding: 5px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
- position: relative;
- bottom: 0px;
- left: 40px;
- color: #61dafb;
- font-size:'20';
- font-weight: bold;
-}
-.paranal-info p {
-  display: flex;
-  position: relative;
-bottom: 250px;
-left: 1px;
-  color: #fff;
-  line-height: 2;
-  font-size: large;
-}
-.paranal-image{
-  width: 189.513px;
-  height: 132.558px;
-  flex-shrink: 0;
-  border-radius: 20px;
-  position: absolute;
-  bottom: 205px;
-  left: 387.87px;
-}
-.arecibo-card{
-  display: flex;
-  width: 450px;
-  height: 300px;
-  padding: 5px 20px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 30px;
-  border: 3px solid #2369B8;
-  background: rgb(0075FF, 0066FF, 000000);
-  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
-  backdrop-filter: blur(20px);
-  position: relative;
-  right: 25px;
-  top: 15px;
- 
-}
-.arecibo-image{
-  width: 189.513px;
-  height: 132.558px;
-}
-.explore-button {
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  height: 50px;
-  padding: 6px 10px;
-  align-items: center;
-  gap: 45px;
-  border-radius: 100px;
-  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
-  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
-  color: white;
-    cursor: pointer;
-    position: absolute;
-    left: 20px;
-    bottom: 30px;
-font-size: 25px;
-font-style: normal;
-font-weight: 700;
-line-height: 20px;} /* 80% */
-
-
-/* .explore-button .explore-button1:hover {
-  background: #008fcc;
-} */
-
-/* Main Image Section */
-/* .image-section {
-  flex: 1;
-  margin-left: 20px;
-  display: flex;
-  margin-right: 45px;
-}
-
-.main-image {
-  width: 100%;
-  width: 1166px;
-  height: 750px;
-  flex-shrink: 0;
-  border-radius: 100px;
-  position: relative;
-  left: 75px;
-} 
-.navbar{
-  display: flex;
-  width: 620px;
-  height: 90px;
-  padding: 2.5px 12.5px 2.5px 10.5px;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  flex-shrink: 0;
-  border-radius: 100px;
-background: rgba(36, 35, 41, 0.60);
-mix-blend-mode: hard-light;
-box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.19) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90) inset;
-backdrop-filter: blur(20px);
-margin-top: 30px;
-
-left: 50%;
-bottom: 10%;
--ms-transform-origin-x: translate(50%);
-}
-.icon1{
-  position: relative;
-  right: 200px;
-  
-}
-.icon2{
-  position: relative;
-  right: 100px;
-}   */
-
 .container {
-  /* background-image: url("./assets//image/bg.jpg"); */
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -400,6 +7,7 @@ bottom: 10%;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 .solar-panel {
   display: flex;
@@ -426,7 +34,7 @@ bottom: 10%;
   width: 400px;
   top: 50%;
   left: 50%;
-  translate: -50% -50%;
+  transform: translate(-50%, -0);
   z-index: 0;
 
 }
@@ -496,9 +104,44 @@ bottom: 10%;
   height: 300px; 
 }
 
-.mars {
+.arecibo {
   width: 100%;
   height: 300px; 
+}
+
+.lick{
+  width: 100%;
+  height: 300px;
+}
+
+.orion{
+  width: 100%;
+  height: 300px;
+}
+
+.ursa{
+  width: 100%;
+  height: 300px;
+}
+
+.scorpio{
+  width: 100%;
+  height: 300px;
+}
+
+.southern{
+  width: 100%;
+  height: 300px;
+}
+
+.halley{
+  width: 100%;
+  height: 300px;
+}
+
+.hale{
+  width: 100%;
+  height: 300px;
 }
 
 .keckcard {
@@ -535,7 +178,8 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   margin-left: 20px;
   margin-top: 50px;
 }
-.marscard {
+
+.arecibocard {
   display: flex;
   width: 28.125rem;
   height: 15.625rem;
@@ -549,6 +193,132 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   backdrop-filter: blur(20px);
   border-radius: 1.25rem;
   background: linear-gradient(90deg, rgba(255, 122, 0, 0.00) 0%, rgba(255, 61, 0, 0.15) 50%, rgba(255, 122, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.lickcard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.orioncard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.ursacard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.scorpiocard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.southerncard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.halleycard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.halecard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
   margin-left: 20px;
   margin-top: 50px;
 }
@@ -570,8 +340,9 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   left: 1.875rem;
   top: 0.0625rem;
 }
+
 .paranalcard> .tittle{
-  width: 6.75rem;
+  width: auto;
   height: 3.625rem;
   text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
   font-family: "FONTSPRING DEMO - Oktah Round Bold";
@@ -587,8 +358,135 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   left: 1.875rem;
   top: 0.0625rem;
 }
-.marscard> .tittle{
-  width: 6.75rem;
+
+.arecibocard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.lickcard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.orioncard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.ursacard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.scorpiocard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.southerncard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.halleycard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.halecard>.tittle{
+  width: auto;
   height: 3.625rem;
   text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
   font-family: "FONTSPRING DEMO - Oktah Round Bold";
@@ -618,6 +516,7 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   font-weight: 700;
   line-height: normal;
 }
+
 .paranalcard> .moreinfo {
   width: 23.4375rem;
   position: absolute;
@@ -631,7 +530,7 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   font-weight: 700;
   line-height: normal;
 }
-.marscard> .moreinfo {
+.arecibocard> .moreinfo {
   width: 23.4375rem;
   position: absolute;
   left: 1.875rem;
@@ -640,6 +539,103 @@ background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0,
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
   font-family: Inter;
 font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.lickcard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.orioncard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ursacard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.scorpiocard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.southerncard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.halleycard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.halecard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -659,6 +655,7 @@ font-size: 1.0625rem;
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
+
 .paranalcard>.moreinfo> .lighttext{
   color: #FFA800;
   font-family: Inter;
@@ -673,8 +670,114 @@ font-size: 1.0625rem;
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
-.marscard>.moreinfo> .lighttext{
+
+.arecibocard>.moreinfo> .lighttext{
   color: #FFA800;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.lickcard>.moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.orioncard> .moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.ursacard>.moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.scorpiocard> .moreinfo> .lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.southerncard> .moreinfo> .lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.halleycard> .moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.halecard>.moreinfo>.lighttext{
+  color: #00A3FF;
   font-family: Inter;
   font-size: 1.0625rem;
   font-style: normal;
@@ -718,7 +821,7 @@ font-size: 1.0625rem;
   background: linear-gradient(180deg, #F6E336 0%, #E48413 100%);
   box-shadow: 0px 4px 10px 2px rgba(255, 153, 0, 0.40);
 }
-.marscard> div>.explorebutton{
+.arecibocard> div>.explorebutton{
   display: flex;
   width: 16.25rem;
   height: 3.125rem;
@@ -732,6 +835,118 @@ font-size: 1.0625rem;
   border-radius: 6.25rem;
   background: linear-gradient(180deg, #F6E336 0%, #E48413 100%);
   box-shadow: 0px 4px 10px 2px rgba(255, 153, 0, 0.40);
+}
+
+.lickcard>.div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.orioncard>.div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.ursacard>.div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.scorpiocard> .div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.southerncard> .div> .explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.halleycard> .div> .explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.halecard>.div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
 }
 
 .textfill {
@@ -764,18 +979,74 @@ font-size: 1.0625rem;
   border-radius: 20px;
 }
 .paranal> .content-img{
-width: 300px;
-  height: 300px;
+width: 9.375rem;
+  height: 9rem;
   position: absolute;
-  top: 300px;
-  right: -22px;
+  top: 380px;
+  right: 35px;
 }
-.mars> .content-img{
+.arecibo> .content-img{
   width: 150px;
-  height: 150px;
+  height: 9rem;
   position: absolute;
   top: 700px;
-  right: 40px;
+  right: 35px;
+}
+
+.lick> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 1000px;
+  right: 35px;
+}
+
+.orion> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 80px;
+  right: 35px;
+}
+
+.ursa> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 390px;
+  right: 35px;
+}
+
+.scorpio> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 700px;
+  right: 35px;
+}
+
+.southern> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 1005px;
+  right: 35px;
+}
+
+.halley> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 1310px;
+  right: 35px;
+}
+
+.hale>.content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 1620px;
+  right: 35px;
 }
 
 .infor {
@@ -791,18 +1062,4 @@ width: 300px;
   background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
   box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
   backdrop-filter: blur(35px);
-}
-/* Đặt kiểu dáng cho ảnh */
-.marscard .wrapicon img {
-  position: absolute; /* Đặt hình ở vị trí tuyệt đối */
-  top: 10px; /* Đặt khoảng cách từ mép trên */
-  right: 10px; /* Đặt khoảng cách từ mép phải */
-  width: 50px; /* Giảm kích thước ảnh */
-  height: auto; /* Giữ tỉ lệ khung hình */
-  border-radius: 8px; /* Tùy chọn góc bo tròn nếu cần */
-}
-
-/* Đảm bảo "wrapicon" có vị trí tương đối để ảnh nằm trong giới hạn của nó */
-.marscard .wrapicon {
-  position: relative;
 }
