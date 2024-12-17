@@ -7,6 +7,7 @@ import Mars from './Mars'
 import SolarPanel from './SolarPanel'
 import BigBang from './BigBang'
 import Navbar from './Navbar'
+
 function Home() {
 
     return (

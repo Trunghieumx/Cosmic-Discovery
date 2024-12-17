@@ -23,11 +23,5 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
 
-}
-.eclipse{
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    left :25px
-}
