@@ -1,0 +1,1065 @@
+.container {
+  width: 100vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.solar-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+  width: 38.125rem;
+  margin-left: 10px;
+
+}
+
+.solar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 1;
+}
+
+.orbit {
+  position: absolute;
+  border-top: 2px rgba(255, 255, 255, 0.69) solid;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -0);
+  z-index: 0;
+
+}
+
+.content-container {
+
+  display: flex;
+  gap: 20px;
+}
+
+.explore {
+  display: flex;
+  width: 38.125rem;
+  height: 46.875rem;
+  padding: 0.3125rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5125rem;
+  flex-shrink: 0;
+  scrollbar-width: none;
+  overflow-y: auto;
+  border-radius: 6.25rem;
+  background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
+  box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
+  backdrop-filter: blur(35px);
+  margin-left: 10px;
+}
+
+
+.dropdown {
+  display: flex;
+  width: 38.125rem;
+  height: 5.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
+  flex-shrink: 0;
+  
+}
+
+.button {
+  display: flex;
+  width: 12rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4375rem;
+  flex-shrink: 0;
+  border-radius: 31.25rem;
+  background: rgba(0, 0, 0, 0.50);
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.keck {
+  width: 100%;
+  height: 300px;
+  
+}
+.paranal {
+  width: 100%;
+  height: 300px; 
+}
+
+.arecibo {
+  width: 100%;
+  height: 300px; 
+}
+
+.lick{
+  width: 100%;
+  height: 300px;
+}
+
+.orion{
+  width: 100%;
+  height: 300px;
+}
+
+.ursa{
+  width: 100%;
+  height: 300px;
+}
+
+.scorpio{
+  width: 100%;
+  height: 300px;
+}
+
+.southern{
+  width: 100%;
+  height: 300px;
+}
+
+.halley{
+  width: 100%;
+  height: 300px;
+}
+
+.hale{
+  width: 100%;
+  height: 300px;
+}
+
+.keckcard {
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.paranalcard {
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.arecibocard {
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #E43913;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(255, 122, 0, 0.00) 0%, rgba(255, 61, 0, 0.15) 50%, rgba(255, 122, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.lickcard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.orioncard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.ursacard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.scorpiocard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.southerncard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.halleycard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.halecard{
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #FFA800;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.tittle {
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(0, 56, 255, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #2AE5FF 31.03%, #0075FF 79.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.paranalcard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.arecibocard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.lickcard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.orioncard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.ursacard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.scorpiocard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.southerncard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.halleycard> .tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.halecard>.tittle{
+  width: auto;
+  height: 3.625rem;
+  text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 1.875rem;
+  top: 0.0625rem;
+}
+
+.moreinfo {
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.paranalcard> .moreinfo {
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.arecibocard> .moreinfo {
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.lickcard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.orioncard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ursacard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.scorpiocard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.southerncard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.halleycard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.halecard> .moreinfo{
+  width: 23.4375rem;
+  position: absolute;
+  left: 1.875rem;
+  top: 3.6875rem;
+  color: #FFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.lighttext {
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.paranalcard>.moreinfo> .lighttext{
+  color: #FFA800;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.arecibocard>.moreinfo> .lighttext{
+  color: #FFA800;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.lickcard>.moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.orioncard> .moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.ursacard>.moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.scorpiocard> .moreinfo> .lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.southerncard> .moreinfo> .lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.halleycard> .moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.halecard>.moreinfo>.lighttext{
+  color: #00A3FF;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.explorebutton {
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+.paranalcard> div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #F6E336 0%, #E48413 100%);
+  box-shadow: 0px 4px 10px 2px rgba(255, 153, 0, 0.40);
+}
+.arecibocard> div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #F6E336 0%, #E48413 100%);
+  box-shadow: 0px 4px 10px 2px rgba(255, 153, 0, 0.40);
+}
+
+.lickcard>.div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.orioncard>.div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.ursacard>.div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.scorpiocard> .div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.southerncard> .div> .explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.halleycard> .div> .explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.halecard>.div>.explorebutton{
+  display: flex;
+  width: 16.25rem;
+  height: 3.125rem;
+  padding: 0.3125rem;
+  padding-left: 12px;
+  align-items: center;
+  gap: 1.25rem;
+  position: absolute;
+  left: 1.875rem;
+  bottom: 0.9375rem;
+  border-radius: 6.25rem;
+  background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%);
+  box-shadow: 0px 3px 9px 0px rgba(0, 56, 255, 0.50);
+}
+
+.textfill {
+  color: #FFF;
+  font-family: "FONTSPRING DEMO - Oktah Round Bold";
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  /* 80% */
+}
+
+.wrapicon {
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 3.125rem;
+  background: #FFF;
+}
+
+.content-img {
+  width: 9.375rem;
+  height: 9rem;
+  position: absolute;
+  top: 80px;
+  right: 35px;
+  border-radius: 20px;
+}
+.paranal> .content-img{
+width: 9.375rem;
+  height: 9rem;
+  position: absolute;
+  top: 380px;
+  right: 35px;
+}
+.arecibo> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 700px;
+  right: 35px;
+}
+
+.lick> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 1000px;
+  right: 35px;
+}
+
+.orion> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 80px;
+  right: 35px;
+}
+
+.ursa> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 390px;
+  right: 35px;
+}
+
+.scorpio> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 700px;
+  right: 35px;
+}
+
+.southern> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 1005px;
+  right: 35px;
+}
+
+.halley> .content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 1310px;
+  right: 35px;
+}
+
+.hale>.content-img{
+  width: 150px;
+  height: 9rem;
+  position: absolute;
+  top: 1620px;
+  right: 35px;
+}
+
+.infor {
+  display: flex;
+  width: 72.875rem;
+  height: 46.875rem;
+  padding: 0.3125rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+  flex-shrink: 0;
+  border-radius: 6.25rem;
+  background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
+  box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
+  backdrop-filter: blur(35px);
+}
