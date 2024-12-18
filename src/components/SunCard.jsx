@@ -23,28 +23,19 @@ function SunCard() {
                 <div className="content">1.989 × 10³⁰ kg</div>
             </div>
             <div className="infor3">
-                <div className="title">DISTANCE FROM SUN</div>
-                <div className="content">149.5 million km</div>
-                <div className="title">ORBITAL PERIOD</div>
-                <div className="content">365 days</div>
-                <div className="title">SOLAR DAY</div>
-                <div className="content">24 hours</div>
+                <div className="title">Role of the Sun</div>
+                <div className="content">Provides Energy</div>
+                <div className="content">Influences Weather and Climate</div>
+                <div className="content">Ecosystem Support</div>
             </div>
             <div className="infor4">
-                <div className="title">DISTANCE FROM SUN</div>
-                <div className="content">149.5 million km</div>
-                <div className="title">ORBITAL PERIOD</div>
-                <div className="content">365 days</div>
-                <div className="title">SOLAR DAY</div>
-                <div className="content">24 hours</div>
+                <div className="title">ATMOSPHERIC COMPOSITION</div>
+                <div className="content">73% Hydrogen, 25% Helium</div>
             </div>
             <div className="infor5">
-                <div className="title">DISTANCE FROM SUN</div>
-                <div className="content">149.5 million km</div>
-                <div className="title">ORBITAL PERIOD</div>
-                <div className="content">365 days</div>
-                <div className="title">SOLAR DAY</div>
-                <div className="content">24 hours</div>
+                <div className="title">TEMPERATURE RANGE</div>
+                <div className="content">Surface : 5,500 °C</div>
+                <div className="content">Core : 15 million °C</div>
             </div>
         </div>
      );

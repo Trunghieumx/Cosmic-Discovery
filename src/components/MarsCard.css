@@ -1,4 +1,4 @@
-.sun-card {
+.mars-card {
     width: 72.875rem;
     height: 46.875rem;
     padding: 0.3125rem;
@@ -13,7 +13,6 @@
     background-size: cover;
     background-position: center;
 }
-
 .planet-container {
     width: 100%;
     height: 100%;
@@ -34,20 +33,20 @@
     width: 40.75rem;
     height: 40.75rem;
     border-radius: 43.75rem;
-    background: rgba(255, 153, 0, 0.25);
-    filter: blur(50px);
+    background: rgba(255, 153, 0, 0.2);
+    filter: blur(40px);
 }
-.sun-card>.infor1 {
+.mars-card>.infor1 {
     display: flex;
     width: auto;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    bottom: 250px;
+    bottom: 300px;
     left: 50px;
 }
 
-.sun-card>.infor1>.title {
+.mars-card>.infor1>.title {
     width: auto;
     text-align: left;
     text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
@@ -63,7 +62,7 @@
     margin: 0;
 }
 
-.sun-card>.infor1>.content {
+.mars-card>.infor1>.content {
     width: auto;
     color: #FFF;
     text-align: left;
@@ -75,17 +74,17 @@
     margin-bottom: 10px;
     margin-left: 0;
 }
-.sun-card>.infor2 {
+.mars-card>.infor2 {
     display: flex;
     width: auto;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: 250px;
+    bottom: 300px;
     right: 50px;
 }
 
-.sun-card>.infor2>.title {
+.mars-card>.infor2>.title {
     width: auto;
     text-align: right;
     font-family: "Abril Fatface";
@@ -101,7 +100,7 @@
     margin: 0;
 }
 
-.sun-card>.infor2>.content {
+.mars-card>.infor2>.content {
     width: auto;
     color: #FFF;
     text-align: right;
@@ -113,7 +112,7 @@
     margin-bottom: 10px;
     margin-left: 0;
 }
-.sun-card>.infor3 {
+.mars-card>.infor3 {
     display: flex;
     width: auto;
     flex-direction: column;
@@ -123,7 +122,7 @@
     left: 50px;
 }
 
-.sun-card>.infor3>.title {
+.mars-card>.infor3>.title {
     width: auto;
     text-align: left;
     font-family: "Abril Fatface";
@@ -139,8 +138,8 @@
     margin: 0;
 }
 
-.sun-card>.infor3>.content {
-    width: auto;
+.mars-card>.infor3>.content {
+    width: 400px;
     color: #FFF;
     text-align: left;
     font-family: "Abril Fatface";
@@ -151,17 +150,18 @@
     margin-bottom: 10px;
     margin-left: 0;
 }
-.sun-card>.infor4 {
+.mars-card>.infor4 {
     display: flex;
     width: auto;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
     bottom: 50px;
-    right: 39%;
+    left: 10%
+    
 }
 
-.sun-card>.infor4>.title {
+.mars-card>.infor4>.title {
     width: auto;
     text-align: center;
     font-family: "Abril Fatface";
@@ -177,7 +177,7 @@
     margin: 0;
 }
 
-.sun-card>.infor4>.content {
+.mars-card>.infor4>.content {
     width: auto;
     color: #FFF;
     text-align: center;
@@ -189,7 +189,7 @@
     margin-bottom: 10px;
     margin-left: 0;
 }
-.sun-card>.infor5 {
+.mars-card>.infor5 {
     display: flex;
     width: auto;
     flex-direction: column;
@@ -199,7 +199,7 @@
     right: 50px;
 }
 
-.sun-card>.infor5>.title {
+.mars-card>.infor5>.title {
     width: auto;
     text-align: right;
     font-family: "Abril Fatface";
@@ -215,8 +215,8 @@
     margin: 0;
 }
 
-.sun-card>.infor5>.content {
-    width: auto;
+.mars-card>.infor5>.content {
+    width: 300px;
     color: #FFF;
     text-align: right;
     font-family: "Abril Fatface";
