@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './Home.css';
 import Saturn from './Saturn'
 import Earth from './Earth'
@@ -9,13 +9,20 @@ import SolarPanel from './SolarPanel'
 import BigBang from './BigBang'
 import Navbar from './Navbar'
 import Evolution from './Evolution'
+import SunCard from './SunCard';
 
 function Home() {
-    // State để kiểm soát việc hiển thị BigBang
+
+    const [showInfor, setShowInfor] = useState(true);
+
+    const handleHideInfor = () => {
+        setShowInfor(false);
+        setShowSuncard(true);
+    };
     const [showBigBang, setShowBigBang] = useState(true);
-    // Hàm xử lý khi nhấn nút Big Bang
+
     const handleBigBangClick = () => {
-        setShowBigBang(true); // Hiển thị component BigBang
+        setShowBigBang(true); 
         setShowEvolution(false)
     };
     
@@ -24,6 +31,7 @@ function Home() {
         setShowBigBang(false)
         setShowEvolution(true);
     }
+    const [showSuncard, setShowSuncard] = useState(false);
     return (
         <div className="container">
 
@@ -45,7 +53,7 @@ function Home() {
 
                     <Saturn />
                 </div>
-
+                {showInfor && (
                 <div className="infor">
                     <div className="button-container">
                         <div className="button" onClick={handleBigBangClick}>Big Bang</div>
@@ -54,10 +62,11 @@ function Home() {
                     {showBigBang && <BigBang />}
                     {showEvolution && <Evolution />}    
                 </div>
-
+                )}
+                {showSuncard && <SunCard />}
             </div>
 
-            <Navbar />
+            <Navbar hideInfor={handleHideInfor} />
         </div>
     );
 }
