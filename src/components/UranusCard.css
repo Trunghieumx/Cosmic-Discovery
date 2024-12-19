@@ -1,0 +1,235 @@
+.uranus-card {
+    width: 72.875rem;
+    height: 46.875rem;
+    padding: 0.3125rem;
+    gap: 0.3125rem;
+    border-radius: 6.25rem;
+    background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
+    box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
+    backdrop-filter: blur(35px);
+    position: relative;
+    background-image: url(/public/images/planetbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.planet-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.planet-container>img{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    translate: -50% -50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.blur {
+    top: 45%;
+    left: 50%;
+    translate: -50% -50%;
+    position: absolute;
+    width: 40.75rem;
+    height: 40.75rem;
+    border-radius: 43.75rem;
+    background: rgba(227, 228, 222, 0.2);
+    filter: blur(40px);
+}
+.uranus-card>.infor1 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+}
+
+.uranus-card>.infor1>.title {
+    width: auto;
+    text-align: left;
+    text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+    background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+    font-family: "Abril Fatface";
+    font-size: 1.475rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.uranus-card>.infor1>.content {
+    width: auto;
+    color: #FFF;
+    text-align: left;
+    font-family: "Abril Fatface";
+    font-size: 1.225rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.uranus-card>.infor2 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 300px;
+    right: 50px;
+}
+
+.uranus-card>.infor2>.title {
+    width: auto;
+    text-align: right;
+    font-family: "Abril Fatface";
+    font-size: 1.475rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+    background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.uranus-card>.infor2>.content {
+    width: 300px;
+    color: #FFF;
+    text-align: right;
+    font-family: "Abril Fatface";
+    font-size: 1.225rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.uranus-card>.infor3 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.uranus-card>.infor3>.title {
+    width: auto;
+    text-align: left;
+    font-family: "Abril Fatface";
+    font-size: 1.475rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+    background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.uranus-card>.infor3>.content {
+    width: 400px;
+    color: #FFF;
+    text-align: left;
+    font-family: "Abril Fatface";
+    font-size: 1.225rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.uranus-card>.infor4 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 50px;
+    left: 10%
+    
+}
+
+.uranus-card>.infor4>.title {
+    width: auto;
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size: 1.475rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+    background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.uranus-card>.infor4>.content {
+    width: auto;
+    color: #FFF;
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size: 1.225rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+.uranus-card>.infor5 {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.uranus-card>.infor5>.title {
+    width: auto;
+    text-align: right;
+    font-family: "Abril Fatface";
+    font-size: 1.475rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+    background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+.uranus-card>.infor5>.content {
+    width: 370px;
+    color: #FFF;
+    text-align: right;
+    font-family: "Abril Fatface";
+    font-size: 1.225rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
