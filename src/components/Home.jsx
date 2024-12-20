@@ -61,7 +61,7 @@ function Home() {
                 
             </div>
 
-            <Navbar hideInfor={handleHideInfor} />
+            <Navbar />
         </div>
     );
 }
