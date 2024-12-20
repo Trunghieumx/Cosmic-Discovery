@@ -1,11 +1,10 @@
-import img from "../assets/image/KeckObservatory.jpg"
+
 import "./KeckCard.css"
 function KeckCard() {
     return (
         <div className="keck-card">
             <div className="ob-container">
-                <img src={img} alt="" />
-                <div className="blur"></div>
+
             </div>
             <div className="infor1">
                 <div className="title">

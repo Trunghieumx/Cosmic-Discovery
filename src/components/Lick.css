@@ -21,6 +21,7 @@
     background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
     margin-left: 20px;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   .lickcard> .tittle{
     width: auto;

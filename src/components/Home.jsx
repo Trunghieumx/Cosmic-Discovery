@@ -65,8 +65,7 @@ function Home() {
                 )}
                 {showSuncard && <SunCard />}
             </div>
-
-            <Navbar hideInfor={handleHideInfor} />
+                
         </div>
     );
 }

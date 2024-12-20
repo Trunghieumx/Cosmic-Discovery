@@ -1,6 +1,7 @@
 import logo from "../assets/image/lick observatory.png"
 import ic1 from "../assets/image/iconearth.png"
 import ic2 from "../assets/image/Vector.png"
+import './Lick.css'
 function Lick() {
     return ( 
         <>

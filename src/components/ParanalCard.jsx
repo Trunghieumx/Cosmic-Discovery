@@ -1,11 +1,11 @@
-import img from "../assets/image/Paranal.jpg"
-import "./ParanalCard.css"
+
+import "./Paranalcard.css"
 function ParanalCard() {
     return ( 
         <div className="paranal-card">
             <div className="ob-container">
-                <img src={img} alt="" />
-                <div className="blur"></div>
+
+
             </div>
             <div className="infor1">
                 <div className="title">
