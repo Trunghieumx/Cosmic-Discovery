@@ -1,4 +1,4 @@
-.lick-card {
+.hale-card {
     width: 72.875rem;
     height: 46.875rem;
     padding: 0.3125rem;
@@ -8,24 +8,24 @@
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
     backdrop-filter: blur(35px);
     position: relative;
-    background-image: url(../assets/image/lick\ observatory.png);
+    background-image: url(../assets/image/Sao\ chổi\ Hale-Bopp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.ob-container {
+.cs-container {
     width: 100%;
     height: 100%;
     position: relative;
 }
-.ob-container>img{
+.cs-container>img{
     position: absolute;
     top: 45%;
     left: 50%;
 
 }
 
-.lick-card>.infor1 {
+.hale-card>.infor1 {
     display: flex;
     width: auto;
     flex-direction: column;
@@ -35,7 +35,7 @@
     left: 50px;
 }
 
-.lick-card>.infor1>.title {
+.hale-card>.infor1>.title {
     width: auto;
     text-align: left;
     text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
@@ -51,7 +51,7 @@
     margin: 0;
 }
 
-.lick-card>.infor1>.content {
+.hale-card>.infor1>.content {
     width: 300px;
     color: #FFF;
     text-align: left;
@@ -63,7 +63,7 @@
     margin-bottom: 10px;
     margin-left: 0;
 }
-.lick-card>.infor2 {
+.hale-card>.infor2 {
     display: flex;
     width: auto;
     flex-direction: column;
@@ -73,7 +73,7 @@
     right: 50px;
 }
 
-.lick-card>.infor2>.title {
+.hale-card>.infor2>.title {
     width: auto;
     text-align: right;
     font-family: "Abril Fatface";
@@ -89,7 +89,7 @@
     margin: 0;
 }
 
-.lick-card>.infor2>.content {
+.hale-card>.infor2>.content {
     width: 300px;
     color: #FFF;
     text-align: right;
@@ -101,7 +101,7 @@
     margin-bottom: 10px;
     margin-left: 0;
 }
-.lick-card>.infor3 {
+.hale-card>.infor3 {
     display: flex;
     width: auto;
     flex-direction: column;
@@ -111,7 +111,7 @@
     left: 50px;
 }
 
-.lick-card>.infor3>.title {
+.hale-card>.infor3>.title {
     width: auto;
     text-align: left;
     font-family: "Abril Fatface";
@@ -127,7 +127,7 @@
     margin: 0;
 }
 
-.lick-card>.infor3>.content {
+.hale-card>.infor3>.content {
     width: 200px;
     color: #FFF;
     text-align: left;
@@ -139,7 +139,7 @@
     margin-bottom: 10px;
     margin-left: 0;
 }
-.lick-card>.infor4 {
+.hale-card>.infor4 {
     display: flex;
     width: auto;
     flex-direction: column;
@@ -150,7 +150,7 @@
     
 }
 
-.lick-card>.infor4>.title {
+.hale-card>.infor4>.title {
     width: auto;
     text-align: right;
     font-family: "Abril Fatface";
@@ -166,7 +166,7 @@
     margin: 0;
 }
 
-.lick-card>.infor4>.content {
+.hale-card>.infor4>.content {
     width: 300px;
     color: #FFF;
     text-align: right;

@@ -1,11 +1,9 @@
-import img from "../assets/image/lick observatory.png"
-import "./LickCard.css"
+
+import "./Lickcard.css"
 function LickCard() {
     return (
         <div className="lick-card">
             <div className="ob-container">
-                <img src={img} alt="" />
-                <div className="blur"></div>
             </div>
             <div className="infor1">
                 <div className="title">Location</div>

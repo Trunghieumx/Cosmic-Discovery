@@ -1,11 +1,9 @@
-import img from "../assets/image/Arecibo.png"
+
 import "./AreciboCard.css"
 function AreciboCard() {
     return (
-        <div className="mars-card">
-            <div className="planet-container">
-                <img src={img} alt="" />
-                <div className="blur"></div>
+        <div className="arecibo-card">
+            <div className="ob-container">
             </div>
             <div className="infor1">
                 <div className="title">Location</div>
