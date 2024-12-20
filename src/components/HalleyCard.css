@@ -8,7 +8,7 @@
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
     backdrop-filter: blur(35px);
     position: relative;
-    background-image: url(../assets/image/Sao-chổi-Halley-6.jpg);
+    background-image: url(../assets/image/Halley-1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    bottom: 300px;
+    bottom: 200px;
     left: 50px;
 }
 
@@ -69,7 +69,7 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: 300px;
+    bottom: 450px;
     right: 50px;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .halley-card>.infor2>.content {
-    width: 300px;
+    width: 400px;
     color: #FFF;
     text-align: right;
     font-family: "Abril Fatface";
@@ -107,13 +107,13 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 300px;
+    left: 780px;
 }
 
 .halley-card>.infor3>.title {
     width: auto;
-    text-align: left;
+    text-align: right;
     font-family: "Abril Fatface";
     font-size: 1.475rem;
     font-style: normal;
@@ -128,9 +128,9 @@
 }
 
 .halley-card>.infor3>.content {
-    width: 200px;
+    width: 350px;
     color: #FFF;
-    text-align: left;
+    text-align: right;
     font-family: "Abril Fatface";
     font-size: 1.225rem;
     font-style: normal;

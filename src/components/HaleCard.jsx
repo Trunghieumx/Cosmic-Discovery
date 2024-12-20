@@ -14,6 +14,7 @@ function HaleCard() {
                     Very bright, visible to the naked eye for 18 months.
                     Orbital period ~2,500 years.
                     Large core (~60 km) and two tails (dust, gas).</div>
+                    </div>
                 <div className="infor2">
                     <div className="title">
                         Importance</div>
@@ -33,8 +34,8 @@ function HaleCard() {
                         One of the most prominent comets of the 20th century.
                     </div>
                 </div>
-            </div>
         </div>
+        
 
     );
 }
