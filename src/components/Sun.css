@@ -1,6 +1,7 @@
 .sun {
     width: 100%;
     height: 300px; 
+    position: relative;
 }
 .suncard {
     display: flex;
@@ -84,6 +85,6 @@
     width: 280px;
     height: 280px;
     position: absolute;
-    top: 340px;
-    right: -10px;
+    top: -100px;
+    right: -25px;
 }

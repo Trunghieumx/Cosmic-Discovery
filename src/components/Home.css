@@ -7,17 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 .content-container {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    gap: 10px
 }
 
 .explore {
@@ -28,57 +24,19 @@
     padding: 0.3125rem;
     flex-direction: column;
     align-items: center;
-    gap: 0.5125rem;
+    gap: 0.3125rem;
     flex-shrink: 0;
     border-radius: 6.25rem;
     background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
-    backdrop-filter: blur(35px);
-    margin-left: 50px;   
-    padding-bottom: 40px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    backdrop-filter: blur(35px);  
     position: relative;
-}
-/* Customize scrollbar */
-.explore::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-    display: none;
-    position: absolute;
-    background: transparent;
-  }
-  
-  .explore::-webkit-scrollbar-thumb {
-    background: #FF9900; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners for the thumb */
-    border: 3px solid #ffffff; /* Optional: Add a border around the thumb */
-    margin-left: 50px;
-  }
-  
-  .explore::-webkit-scrollbar-track {
-    background: #e0e0e0; /* Color of the track */
-    border-radius: 10px; /* Rounded corners for the track */
-    margin-left: 50px;
-  }
-  .explore::-webkit-scrollbar-thumb:hover {
-    background: #FF6600; /* Change color on hover */
-}
-.dropdown {
-    display: flex;
-    width: 38.125rem;
-    height: 5.25rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1.875rem;
-    flex-shrink: 0;
-    position: sticky;
-    margin-top: 10px;
 }
 
 .button {
     display: flex;
     width: 14rem;
-    height: 3rem;
+    height: 50px;
     justify-content: center;
     align-items: center;
     gap: 2.4375rem;
@@ -108,17 +66,33 @@
     flex-direction: column;
     align-items: center;
     gap: 0.3125rem;
-    flex-shrink: 0;
     border-radius: 6.25rem;
     background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
     backdrop-filter: blur(35px);
 }
 .button-container{
-    height: 5.25rem;
+    height: auto;
     width: 100%;
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 10px;
+    box-sizing: border-box;
+    margin: 10px 0px 5px 0px;
 }
+.planet-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 720px;
+    gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+.planet-list::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    position: absolute;
+    background: transparent;
+    display: none;
+  }

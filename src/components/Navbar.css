@@ -5,17 +5,15 @@
     height: 5.625rem;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     border-radius: 6.25rem;
     background: rgba(36, 35, 41, 0.60);
     mix-blend-mode: hard-light;
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.19) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90) inset;
     backdrop-filter: blur(20px);
     position: absolute;
-    left: 50%;
-    bottom: 5%;
+    left:50%;
+    bottom: 10px;
     translate: -50% -50%;
-
 }
 .icon-container{
     width: 100%;

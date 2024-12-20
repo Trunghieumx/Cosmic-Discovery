@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from 'react';
+
 
 import "./App.css"; // Đừng quên thêm CSS vào file này
 import logo from "./assets/image/đài quan sát 1.png";

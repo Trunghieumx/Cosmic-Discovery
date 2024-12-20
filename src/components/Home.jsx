@@ -9,16 +9,10 @@ import SolarPanel from './SolarPanel'
 import BigBang from './BigBang'
 import Navbar from './Navbar'
 import Evolution from './Evolution'
-import SunCard from './SunCard';
+
 
 function Home() {
 
-    const [showInfor, setShowInfor] = useState(true);
-
-    const handleHideInfor = () => {
-        setShowInfor(false);
-        setShowSuncard(true);
-    };
     const [showBigBang, setShowBigBang] = useState(true);
 
     const handleBigBangClick = () => {
@@ -31,7 +25,7 @@ function Home() {
         setShowBigBang(false)
         setShowEvolution(true);
     }
-    const [showSuncard, setShowSuncard] = useState(false);
+    
     return (
         <div className="container">
 
@@ -40,11 +34,11 @@ function Home() {
             <div className='content-container'>
 
                 <div className="explore">
-                    <div className='dropdown'>
+                    <div className="button-container">
                         <div className='button' >All stateline</div>
                         <div className='button'>Most viewed</div>
                     </div>
-
+                    <div className="planet-list">
                     <Earth />
 
                     <Sun />
@@ -52,8 +46,9 @@ function Home() {
                     <Mars />
 
                     <Saturn />
+                    </div>
                 </div>
-                {showInfor && (
+                
                 <div className="infor">
                     <div className="button-container">
                         <div className="button" onClick={handleBigBangClick}>Big Bang</div>
@@ -62,11 +57,11 @@ function Home() {
                     {showBigBang && <BigBang />}
                     {showEvolution && <Evolution />}    
                 </div>
-                )}
-                {showSuncard && <SunCard />}
+                
+                
             </div>
 
-            <Navbar hideInfor={handleHideInfor} />
+            
         </div>
     );
 }
