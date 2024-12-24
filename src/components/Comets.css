@@ -1,0 +1,45 @@
+.title {
+    height: auto;
+    flex-shrink: 0;
+    align-self: stretch;
+    text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
+    font-family: Adamina;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(180deg, #F6E336 32.76%, #E48413 87.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+}
+
+.content {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.comet{
+    border-radius: 6.25rem;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 46.875rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
