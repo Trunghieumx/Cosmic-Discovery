@@ -1,3 +1,6 @@
+
+
+
 .container {
     background-image: url("/public/images/bg.png");
     width: 100vw;
@@ -29,7 +32,7 @@
     border-radius: 6.25rem;
     background: linear-gradient(127deg, rgba(0, 0, 0, 0.60) 6.79%, rgba(36, 35, 41, 0.60) 93.21%);
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
-    backdrop-filter: blur(35px);  
+    backdrop-filter: blur(35px);
     position: relative;
 }
 
@@ -51,18 +54,21 @@
     font-weight: 600;
     line-height: normal;
 }
-.button:hover{
+
+.button:hover {
+    background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%); 
     cursor: pointer;
     scale: 1.1;
 }
-
-
+.button:active {
+    background: linear-gradient(180deg, #2AE5FF -28%, #0075FF 79.31%); 
+    transform: scale(1); 
+}
 .infor {
     box-sizing: border-box;
     display: flex;
     width: 72.875rem;
     height: 46.875rem;
-    padding: 0.3125rem;
     flex-direction: column;
     align-items: center;
     gap: 0.3125rem;
@@ -71,7 +77,8 @@
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
     backdrop-filter: blur(35px);
 }
-.button-container{
+
+.button-container {
     height: auto;
     width: 100%;
     display: inline-flex;
@@ -80,7 +87,9 @@
     box-sizing: border-box;
     margin: 10px 0px 5px 0px;
 }
-.planet-list{
+
+.planet-list {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -90,9 +99,16 @@
     overflow-x: hidden;
     position: relative;
 }
+
 .planet-list::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
+    /* Width of the scrollbar */
     position: absolute;
     background: transparent;
     display: none;
-  }
+}
+
+.earth-card-container {
+    display: inline-block;
+    /* Hoặc block tùy giao diện */
+}

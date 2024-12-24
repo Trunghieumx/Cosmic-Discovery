@@ -1,7 +1,6 @@
 import './Earth.css'
-function Earth() {
+function Earth({ onExplore }) {
     return (
-
         <div className='earth'>
             <div className='earthcard'>
                 <div className='tittle'>Earth</div>
@@ -13,7 +12,7 @@ function Earth() {
                     <span>, it is the largest and most massive...</span>
                 </div>
                 <div>
-                    <div className='explorebutton'>
+                    <div className='explorebutton' onClick={onExplore}>
                         <div className='wrapicon'>
                             <img src="./images/iconearth.png" />
                         </div>

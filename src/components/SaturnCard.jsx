@@ -3,7 +3,7 @@ function SaturnCard() {
     return (
         <div className="saturn-card">
             <div className="planet-container">
-                <img src="" alt="" />
+                
                 <div className="blur"></div>
             </div>
             <div className="infor1">

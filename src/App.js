@@ -5,27 +5,16 @@ import Home from './components/Home';
 import VisitorCount from './components/VisitorCount';
 import ScrollingSticker from './components/ScrollingSticker';
 import Navbar from './components/Navbar';
+import SolarSystemView from './components/SolarSystemView';
+import Mercury from './components/Mercury';
 
 function App() {
-  const [showHome, setShowHome] = useState(true);
-  const [showObser, setShowObser] = useState(true);
-
-  const handleShowHome = () => {
-    setShowHome(true);
-    setShowObser(false);
-  };
-  const handleShowObser = () => {
-    setShowHome(false);
-    setShowObser(true);
-  };
-
+  
   return (
     <>
-      {showHome && <Home />}
+      <Home />
       <VisitorCount />
-      <Navbar />
       <ScrollingSticker />
-
     </>
   );
 }

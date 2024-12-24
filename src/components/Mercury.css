@@ -1,37 +1,36 @@
-.saturn {
+.mercury {
     width: 100%;
     height: 300px;
-    position: relative;   
+    position: relative;
 }
-.saturncard {
+.mercurycard {
     display: flex;
     width: 28.125rem;
-    height: 15.625rem;
+    height: 16.625rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     border-radius: 1.875rem;
-    border: 3px solid #c7ab5d;
+    border: 3px solid #7de38c;
     background: rgba(0, 0, 0, 0.60);
     backdrop-filter: blur(20px);
     border-radius: 1.25rem;
     margin-left: 20px;
     margin-top: 50px;
 }
-.saturncard:hover{
-    background: linear-gradient(90deg, rgba(255, 138, 0, 0.00) 0%, rgba(216, 141, 28, 0.25) 50%, rgba(255, 138, 0, 0.00) 100%);
+.mercurycard:hover{
+    background: linear-gradient(90deg, rgba(255, 122, 0, 0.00) 0%, rgba(255, 61, 0, 0.15) 50%, rgba(255, 122, 0, 0.00) 100%);
 }
-.saturncard>.tittle {
+.mercurycard>.tittle {
     width: auto;
     height: 3.625rem;
-    text-shadow: 0px 3px 9px rgba(152, 91, 0, 0.50);
+    text-shadow: 0px 3px 9px rgba(152, 46, 0, 0.50);
     font-family: "FONTSPRING DEMO - Oktah Round Bold";
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    background: linear-gradient(180deg, #F6CC36 24.14%, #E47813 79.31%);
+    background: linear-gradient(180deg, #ec9f32 37.07%, #e2da39 79.31%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,7 +38,7 @@
     left: 1.875rem;
     top: 0.0625rem;
 }
-.saturncard>.moreinfo {
+.mercurycard>.moreinfo {
     width: 23.4375rem;
     position: absolute;
     left: 1.875rem;
@@ -52,8 +51,8 @@
     font-weight: 700;
     line-height: normal;
 }
-.saturncard>.moreinfo>.lighttext {
-    color: #FF9D00;
+.mercurycard>.moreinfo>.lighttext {
+    color: #5ce1bb;
     font-family: Inter;
     font-size: 1.0625rem;
     font-style: normal;
@@ -66,7 +65,7 @@
     text-underline-offset: auto;
     text-underline-position: from-font;
 }
-.saturncard>div>.explorebutton {
+.mercurycard>div>.explorebutton {
     display: flex;
     width: 16.25rem;
     height: 3.125rem;
@@ -78,33 +77,13 @@
     left: 1.875rem;
     bottom: 0.9375rem;
     border-radius: 6.25rem;
-    background: linear-gradient(180deg, #F6CC36 0%, #E47813 100%);
+    background: linear-gradient(180deg, #ec9f32 37.07%, #e2da39 100%);
     box-shadow: 0px 4px 10px 2px rgba(255, 77, 0, 0.40);
 }
-.textfill {
-    color: #FFF;
-    font-family: "FONTSPRING DEMO - Oktah Round Bold";
-    font-size: 1.5625rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.25rem;
-    /* 80% */
-}
-.wrapicon {
-    display: flex;
-    width: 2.5rem;
-    height: 2.5rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 3.125rem;
-    background: #FFF;
-}
-.saturn>.content-img {
-    width: 13rem;
-    height: 13rem;
-    object-fit:fill ;
+.mercury>.content-img {
+    width: 150px;
+    height: 150px;
     position: absolute;
-    top: -70px;
-    right: 0px;
+    top: -40px;
+    right: 40px;
 }

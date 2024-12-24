@@ -1,5 +1,5 @@
 import './Mars.css'
-function Mars() {
+function Mars({onExplore}) {
     return (
 
         <div className='mars'>
@@ -13,7 +13,7 @@ function Mars() {
                     <span> objects in Earth's sky, and a common subject for telescope viewing...  </span>
                 </div>
                 <div>
-                    <div className='explorebutton'>
+                    <div className='explorebutton'onClick={onExplore}>
                         <div className='wrapicon'>
                             <img src="./images/iconmars.png" />
                         </div>

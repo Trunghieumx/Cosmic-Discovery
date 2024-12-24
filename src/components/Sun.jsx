@@ -1,5 +1,5 @@
 import './Sun.css'
-function Sun() {
+function Sun({onExplore}) {
     return (
 
         <div className='sun'>
@@ -13,7 +13,7 @@ function Sun() {
                     <span> away. Its diameter is about 109 times that of Earth... </span>
                 </div>
                 <div>
-                    <div className='explorebutton'>
+                    <div className='explorebutton' onClick={onExplore}>
                         <div className='wrapicon'>
                             <img src="./images/iconsun.png" />
                         </div>

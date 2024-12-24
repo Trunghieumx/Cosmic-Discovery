@@ -1,7 +1,7 @@
 import './SolarPanel.css'
-function SolarPanel() {
+function SolarPanel({ onExplore }) {
     return (
-        <div className="solar-panel">
+        <div className="solar-panel" onClick={onExplore} >
             <div className="solar-content">
                 <img src='/images/Sun.png'></img>
                 <img src='/images/Mercury.png'></img>

@@ -8,7 +8,6 @@
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
     backdrop-filter: blur(35px);
     position: relative;
-    background-image: url(/public/images/planetbg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,9 +17,9 @@
     height: 100%;
     position: relative;
 }
-.planet-container>img{
-    width: 600px;
-    height: 400px;
+.mercury-card>.planet-container>img{
+    width: 700px;
+    height: 500px;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -117,7 +116,7 @@
     display: flex;
     width: auto;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     position: absolute;
     bottom: 50px;
     left: 50px;

@@ -1,5 +1,5 @@
 import './Saturn.css'
-function Saturn() {
+function Saturn({onExplore}) {
     return (
 
         <div className='saturn'>
@@ -13,7 +13,7 @@ function Saturn() {
                     <span> orbit the planet...  </span>
                 </div>
                 <div>
-                    <div className='explorebutton'>
+                    <div className='explorebutton' onClick={onExplore}>
                         <div className='wrapicon'>
                             <img src="./images/iconsaturn.png" />
                         </div>

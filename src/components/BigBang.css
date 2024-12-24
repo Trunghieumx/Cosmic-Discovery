@@ -1,7 +1,7 @@
 .title {
     height: auto;
     flex-shrink: 0;
-    align-self: stretch;
+    
     text-shadow: 0px 3px 9px rgba(255, 168, 0, 0.50);
     font-family: Adamina;
     font-size: 2.5rem;
@@ -27,14 +27,12 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-align: left;
 }
 .bigbang{
-    
-    margin-left: 20px;
-    margin-bottom: 50px;
-    margin-right: 50px;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 0 30px 0 30px ;
+    margin: 30px 0 30px 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -44,6 +42,7 @@
     position: relative;
 }
 .bigbang::-webkit-scrollbar {
+  display: none;
     width: 12px; /* Width of the scrollbar */
     position: absolute;
     background: transparent;
