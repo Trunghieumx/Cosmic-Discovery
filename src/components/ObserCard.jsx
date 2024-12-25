@@ -1,12 +1,10 @@
 import './ObserCard.css'
 function ObserCard() {
     return (
-        <>
             <div className="obser">
                 <div className="title"> Observatory</div>
                 <div className="content"> Keck Observatory</div>
                 <div className="content">
-
                     The Keck Observatory is one of the most important and advanced astronomy facilities in the world, renowned for its unparalleled technology and observing capabilities.</div>
                 <div className="content">Paranal Observatory</div>
                 <div className="content">
@@ -17,8 +15,6 @@ function ObserCard() {
                 <div className="content">
                     Lick Observatory is one of the oldest and most important astronomical observatories in the United States, with a long history of studying astronomical phenomena.</div>
             </div>
-
-        </>
     );
 }
 

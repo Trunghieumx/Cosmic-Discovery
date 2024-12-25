@@ -23,6 +23,7 @@ import Uranus from './Uranus';
 import UranusCard from './UranusCard';
 import Neptune from './Neptune';
 import NeptuneCard from './NeptuneCard';
+import Navbar from './Navbar';
 
 function Home() {
   const [activeContent, setActiveContent] = useState('BigBang');
@@ -72,6 +73,7 @@ function Home() {
           {activeContent === 'SolarSystem' && <SolarSystemView />}
         </div>
       </div>
+      <Navbar/>
     </div>
   );
 }
