@@ -2,6 +2,7 @@ import './Evolution.css'
 function Evolution() {
     return (
         <div className="evolution">
+            
             <div className="title">Formation from Gas and Dust Clouds (Around 4.6 Billion Years Ago)</div>
             <div className="content">Earth and other planets in the Solar System were formed from a massive cloud of gas and dust. This cloud, called the protoplanetary disk, contracted under the influence of gravity, forming the Sun at its center. The remaining dust and gas gradually clumped together, forming planetesimals and eventually the planets.</div>
             <div className="title">Heating and Differentiation (Around 4.5 Billion Years Ago)</div>

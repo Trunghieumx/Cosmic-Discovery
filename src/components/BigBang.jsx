@@ -2,6 +2,9 @@ import './BigBang.css'
 function BigBang() {
     return (
         <div className="bigbang">
+            <div className='bigbang-img'>
+                <img src="./images/bigbang.png" alt="" />
+            </div>
             <div className="title">Basic Concept</div>
             <div className="content">The Big Bang theory proposes that the universe began from an extremely small, hot, and dense singularity approximately 13.8 billion years ago. From this singularity, the universe underwent a process of expansion and gradual cooling.</div>
             <div className="title">The Process</div>

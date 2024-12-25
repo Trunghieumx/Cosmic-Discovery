@@ -20,7 +20,6 @@ function Sun({onExplore}) {
                         <div className='textfill'>EXPLORE</div>
                         <img src='./images/Vector.png'></img>
                     </div>
-
                 </div>
             </div>
             <img className='content-img' src="./images/Suncard.png" />

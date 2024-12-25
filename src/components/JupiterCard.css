@@ -8,7 +8,6 @@
     box-shadow: -8px -8px 5px 0px rgba(18, 15, 15, 0.60) inset, 4px 4px 4px 0px rgba(255, 255, 255, 0.50) inset, 0px 20px 50px 0px rgba(0, 0, 0, 0.90);
     backdrop-filter: blur(35px);
     position: relative;
-    background-image: url(/public/images/planetbg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,7 +17,7 @@
     height: 100%;
     position: relative;
 }
-.planet-container>img{
+.jupiter-card>.planet-container>img{
     width: 600px;
     height: 600px;
     position: absolute;
@@ -27,19 +26,18 @@
     translate: -50% -50%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat; 
 }
 
-.blur {
+.jupiter-card>.planet-container>.blur {
     top: 45%;
     left: 50%;
     translate: -50% -50%;
     position: absolute;
-    width: 40.75rem;
-    height: 40.75rem;
+    width: 35.75rem;
+    height: 35.75rem;
     border-radius: 43.75rem;
-    background: rgba(255, 153, 0, 0.2);
+    background: rgba(233, 184, 110, 0.2);
     filter: blur(40px);
 }
 .jupiter-card>.infor1 {
@@ -122,7 +120,7 @@
     display: flex;
     width: auto;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     position: absolute;
     bottom: 50px;
     left: 50px;

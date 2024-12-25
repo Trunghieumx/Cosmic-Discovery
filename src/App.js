@@ -7,6 +7,8 @@ import ScrollingSticker from './components/ScrollingSticker';
 import Navbar from './components/Navbar';
 import SolarSystemView from './components/SolarSystemView';
 import Mercury from './components/Mercury';
+import JupiterCard from './components/JupiterCard';
+import EarthCard from './components/EarthCard';
 
 function App() {
   

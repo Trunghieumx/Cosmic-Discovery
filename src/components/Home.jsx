@@ -15,6 +15,14 @@ import SolarSystemView from './SolarSystemView';
 import SaturnCard from './SaturnCard';
 import Mercury from './Mercury';
 import MercuryCard from './MercuryCard';
+import Venus from './Venus';
+import VenusCard from './VenusCard';
+import Jupiter from './Jupiter';
+import JupiterCard from './JupiterCard';
+import Uranus from './Uranus';
+import UranusCard from './UranusCard';
+import Neptune from './Neptune';
+import NeptuneCard from './NeptuneCard';
 
 function Home() {
   const [activeContent, setActiveContent] = useState('BigBang');
@@ -43,6 +51,10 @@ function Home() {
             <Mars onExplore={() => handleChangeContent('MarsCard')} />
             <Saturn onExplore={() => handleChangeContent('SaturnCard')} />
             <Mercury onExplore={() => handleChangeContent('MercuryCard')}/>
+            <Venus onExplore={() => handleChangeContent('VenusCard')}/>
+            <Jupiter onExplore={() => handleChangeContent('JupiterCard')}/>
+            <Uranus onExplore={() => handleChangeContent('UranusCard')}/>
+            <Neptune onExplore={() => handleChangeContent('NeptuneCard')}/>
           </div>
         </div>
         <div className={`infor ${fadeClass}`}>
@@ -53,6 +65,10 @@ function Home() {
           {activeContent === 'MarsCard' && <MarsCard />}
           {activeContent === 'SaturnCard' && <SaturnCard />}
           {activeContent === 'MercuryCard' && <MercuryCard />}
+          {activeContent === 'VenusCard' && <VenusCard />}
+          {activeContent === 'JupiterCard' && <JupiterCard />}
+          {activeContent === 'UranusCard' && <UranusCard />}
+          {activeContent === 'NeptuneCard' && <NeptuneCard />}
           {activeContent === 'SolarSystem' && <SolarSystemView />}
         </div>
       </div>

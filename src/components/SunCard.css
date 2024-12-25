@@ -20,14 +20,15 @@
     height: 100%;
     position: relative;
 }
-.planet-container>img{
+.sun-card>.planet-container>img{
+    width: 700px;
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 52%;
     translate: -50% -50%;
 }
 
-.blur {
+.sun-card>.planet-container>.blur {
     top: 45%;
     left: 50%;
     translate: -50% -50%;
