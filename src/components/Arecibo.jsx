@@ -2,7 +2,7 @@ import logo from "../assets/image/Arecibo.png"
 import ic1 from "../assets/image/iconearth.png"
 import ic2 from "../assets/image/Vector.png"
 import "./Arecibo.css"
-function Arecibo() {
+function Arecibo({ onExplore }) {
     return ( 
         <>
          <div className="arecibo">
@@ -24,7 +24,7 @@ function Arecibo() {
                 <span> Closed in 2020.</span>
               </div>
               <div>
-                <div className="explorebutton">
+                <div className="explorebutton" onClick={onExplore}>
                   <div className="wrapicon">
                     <img src={ic1} alt="icon" />
                   </div>

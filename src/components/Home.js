@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Home.css';
 import './Fade.css';
 import Saturn from './Saturn';
@@ -24,11 +25,19 @@ import UranusCard from './UranusCard';
 import Neptune from './Neptune';
 import NeptuneCard from './NeptuneCard';
 import Navbar from './Navbar';
+import BookSearch from '../BookSearch';
 
 function Home() {
+  const location = useLocation();
+  useEffect(() => {
+    const state = location.state;
+    if (state?.card) {
+      setActiveContent(state.card);
+    }
+  }, [location]);
   const [activeContent, setActiveContent] = useState('BigBang');
   const [fadeClass, setFadeClass] = useState('');
-
+  const [isContentContainerHidden, setContentContainerHidden] = useState(false);
   const handleChangeContent = (content) => {
     setFadeClass('fade-out');
     setTimeout(() => {
@@ -36,10 +45,20 @@ function Home() {
       setFadeClass('fade-in'); 
     }, 300);
   };
+  const handleSelectIcon = (iconName) => {
+    if (iconName === 'explore') {
+      setActiveContent('BookSearch');
+      setContentContainerHidden(true); // Ẩn content-container
+    } else {
+      setActiveContent(iconName + 'Card');
+      setContentContainerHidden(false); // Hiển thị lại content-container
+    }
+  };
 
   return (
     <div className="container">
       <SolarPanel onExplore={() => handleChangeContent('SolarSystem')}/>
+      {!isContentContainerHidden && ( // Ẩn content-container nếu isContentContainerHidden = true
       <div className="content-container">
         <div className="explore">
           <div className="button-container">
@@ -71,9 +90,12 @@ function Home() {
           {activeContent === 'UranusCard' && <UranusCard />}
           {activeContent === 'NeptuneCard' && <NeptuneCard />}
           {activeContent === 'SolarSystem' && <SolarSystemView />}
+          
         </div>
       </div>
-      <Navbar/>
+      )}
+      {activeContent === 'BookSearch' && <BookSearch />}
+      <Navbar onSelectIcon={handleSelectIcon}/>
     </div>
   );
 }

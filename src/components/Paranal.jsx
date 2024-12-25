@@ -1,5 +1,5 @@
 import './Paranal.css'
-function Paranal() {
+function Paranal({ onExplore }) {
     return ( 
         <>
         <div className="paranal">
@@ -17,7 +17,7 @@ function Paranal() {
                 </span>
               </div>
               <div>
-                <div className="explorebutton">
+                <div className="explorebutton" onClick={onExplore}>
                   <div className="wrapicon">
                     <img src="../assets/image/iconearth.png" alt="icon" />
                   </div>

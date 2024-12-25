@@ -2,7 +2,7 @@ import logo from "../assets/image/Sao chổi Hale-Bopp.jpg"
 import ic1 from "../assets/image/iconearth.png"
 import ic2 from "../assets/image/Vector.png"
 import "./Hale.css"
-function Hale() {
+function Hale({ onExplore }) {
     return ( 
         <>
         <div className="hale">
@@ -18,7 +18,7 @@ function Hale() {
                 </span>
               </div>
               <div>
-                <div className="explorebutton">
+                <div className="explorebutton" onClick={onExplore}>
                   <div className="wrapicon">
                     <img src={ic1} alt="icon" />
                   </div>

@@ -43,3 +43,10 @@
     overflow-x: hidden;
     position: relative;
 }
+.obser::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+    position: absolute;
+    background: transparent;
+    display: none;
+}

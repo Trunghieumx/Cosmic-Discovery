@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react'
 import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import VisitorCount from './components/VisitorCount';
 import ScrollingSticker from './components/ScrollingSticker';
@@ -11,14 +12,19 @@ import JupiterCard from './components/JupiterCard';
 import EarthCard from './components/EarthCard';
 import BookSearch from './BookSearch';
 import ObserCard from './components/ObserCard';
+import Arecibo from './components/Arecibo';
+import Observatory from './components/Observatory';
 function App() {
   
   return (
     <>
-      <Home />
-      <VisitorCount />
-      <ScrollingSticker /> 
-      {/* <BookSearch/> */}
+      <VisitorCount/>
+      <ScrollingSticker/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/obser" element={<Observatory />} />
+        <Route path="/explore" element={<BookSearch />} />
+      </Routes>
     
     </>
   );

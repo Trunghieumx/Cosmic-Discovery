@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { TextField, Button, Card, CardContent, Typography, Link, Grid, Box } from "@mui/material";
+import Navbar from "./components/Navbar";
 
 const BookSearch = () => {
   const [query, setQuery] = useState("");
@@ -98,6 +99,7 @@ const BookSearch = () => {
           <Typography>No books found. Try searching for something else!</Typography>
         )}
       </Grid>
+      <Navbar/>
     </div>
   );
 };

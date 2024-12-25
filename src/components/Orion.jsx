@@ -2,7 +2,7 @@ import logo from "../assets/image/Orion.png"
 import ic1 from "../assets/image/iconearth.png"
 import ic2 from "../assets/image/Vector.png"
 import "./Orion.css"
-function Orion() {
+function Orion({ onExplore }) {
     return ( 
         <>
         <div className="orion">
@@ -16,7 +16,7 @@ function Orion() {
 
               </div>
               <div>
-                <div className="explorebutton">
+                <div className="explorebutton" onClick={onExplore}>
                   <div className="wrapicon">
                     <img src={ic1} alt="icon" />
                   </div>

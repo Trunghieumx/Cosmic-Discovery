@@ -1,11 +1,24 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
+import { useNavigate } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({ onSelectIcon }) {
   const [selectedIcon, setSelectedIcon] = useState('home');
+  const navigate = useNavigate();
 
   const handleClick = (iconName) => {
     setSelectedIcon(iconName);
+    if (iconName === 'explore') {
+      navigate('/explore'); // Điều hướng đến BookSearch
+    } else if (iconName === 'world') {
+      navigate('/', { state: { card: 'EarthCard' } }); // Điều hướng đến Home với trạng thái EarthCard
+    } else if (iconName === 'home') {
+      navigate('/'); // Điều hướng về Home chính
+    } else if (iconName === 'obser') {
+      navigate('/obser'); // Điều hướng đến trang Observatory
+    } else {
+      onSelectIcon && onSelectIcon(iconName); // Xử lý icon khác nếu cần
+    }
   };
 
   return (

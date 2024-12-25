@@ -1,5 +1,5 @@
 import './Keck.css'
-function Keck() {
+function Keck({ onExplore }) {
     return ( 
         <div>
                        <div className="keck">
@@ -16,7 +16,7 @@ function Keck() {
                 <span> and gravitational wave research.</span>
               </div>
               <div>
-                <div className="explorebutton">
+                <div className="explorebutton" onClick={onExplore}>
                   <div className="wrapicon">
                     <img src="../assets/image/iconearth.png" alt="icon" />
                   </div>
