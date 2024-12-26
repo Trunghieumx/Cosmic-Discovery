@@ -31,7 +31,6 @@ function EarthCard() {
             <div className="video" onClick={handlePlayClick}>
                 <img src="./images/Play.png" alt="Play" />
             </div>
-
             {showVideo && (
                 <div className="video-overlay" onClick={() => setShowVideo(false)}>
                     <div className="video-container">

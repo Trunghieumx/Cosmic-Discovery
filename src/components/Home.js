@@ -48,17 +48,17 @@ function Home() {
   const handleSelectIcon = (iconName) => {
     if (iconName === 'explore') {
       setActiveContent('BookSearch');
-      setContentContainerHidden(true); // Ẩn content-container
+      setContentContainerHidden(true); // Hide content-container
     } else {
       setActiveContent(iconName + 'Card');
-      setContentContainerHidden(false); // Hiển thị lại content-container
+      setContentContainerHidden(false); // Show content-container
     }
   };
 
   return (
     <div className="container">
       <SolarPanel onExplore={() => handleChangeContent('SolarSystem')}/>
-      {!isContentContainerHidden && ( // Ẩn content-container nếu isContentContainerHidden = true
+      {!isContentContainerHidden && ( // Hide content-container if isContentContainerHidden = true
       <div className="content-container">
         <div className="explore">
           <div className="button-container">
@@ -90,7 +90,6 @@ function Home() {
           {activeContent === 'UranusCard' && <UranusCard />}
           {activeContent === 'NeptuneCard' && <NeptuneCard />}
           {activeContent === 'SolarSystem' && <SolarSystemView />}
-          
         </div>
       </div>
       )}

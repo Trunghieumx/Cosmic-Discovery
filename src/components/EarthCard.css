@@ -318,6 +318,7 @@
 }
 .spinner{
     animation: spin 60s linear infinite;
+    border-radius: 50%;
 }
 @keyframes spin {
     from {
