@@ -14,8 +14,6 @@ import BookSearch from './BookSearch';
 import ObserCard from './components/ObserCard';
 import Arecibo from './components/Arecibo';
 import Observatory from './components/Observatory';
-import YouTubeVideos from './YouTubeVideos';
-import TwitterFeed from './TwitterFeed';
 function App() {
   
   return (
