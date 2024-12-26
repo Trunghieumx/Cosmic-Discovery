@@ -1,4 +1,7 @@
 import './Keck.css'
+import img from '../assets/image/KeckObservatory.jpg'
+import ic1 from '../assets/image/iconearth.png'
+import ic2 from '../assets/image/Vector.png'
 function Keck({ onExplore }) {
     return ( 
         <div>
@@ -18,14 +21,14 @@ function Keck({ onExplore }) {
               <div>
                 <div className="explorebutton" onClick={onExplore}>
                   <div className="wrapicon">
-                    <img src="../assets/image/iconearth.png" alt="icon" />
+                    <img src={ic1} alt="icon" />
                   </div>
                   <div className="textfill">EXPLORE</div>
-                  <img src="../assets/image/Vector.png" alt="vecto"></img>
+                  <img src={ic2} alt="vecto"></img>
                 </div>
               </div>
             </div>
-            <img className="content-img" src="../assets/image/KeckObservatory.jpg" alt="Keck" />
+            <img className="content-img" src={img} alt="Keck" />
           </div>
         </div>
      );

@@ -1,10 +1,43 @@
-
+import { useState } from "react";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import "./Paranalcard.css"
 function ParanalCard() {
+    const [Liked, setLiked] = useState(false);
+    const [Count, setCount] = useState(8386);
+    const [showMap, setShowMap] = useState(false); // Thêm state để kiểm soát hiển thị bản đồ
+    
+    // Coordinates for Lick Observatory
+    const position = {
+        lat: -24.6252, // Vĩ độ
+        lng: -70.4028 // Kinh độ
+    };
+
+    const handleLikeToggle = () => {
+        if (Liked) {
+            setCount((prev) => prev - 1);
+        } else {
+            setCount((prev) => prev + 1);
+        }
+        setLiked(!Liked);
+    };
+
+    const handleMapClick = () => {
+        setShowMap((prev) => !prev); // Toggle trạng thái hiển thị bản đồ
+    };
     return ( 
         <div className="paranal-card">
+            <div className="like" onClick={handleLikeToggle}>
+                {Liked ? (
+                    <img src="./images/Heartfill.png" alt="Liked" />
+                ) : (
+                    <img src="./images/Heart.png" alt="Not liked" />
+                )}
+                <span className="count">{Count}</span>
+            </div>
+            <div className="video">
+                <img src="./images/iconmap.png" alt="Map" onClick={handleMapClick} />
+            </div>
             <div className="ob-container">
-
 
             </div>
             <div className="infor1">
@@ -50,6 +83,23 @@ function ParanalCard() {
                 <div className="content">
                 Capture direct images of extrasolar planets.</div>
             </div>
+            {/* Hiển thị bản đồ khi showMap là true */}
+            {showMap && (
+                <div className="map-container">
+                    <LoadScript googleMapsApiKey="AIzaSyD8kDUOgBxf1NPAKSa3Df6rR-CfDBNELc4">
+                        <GoogleMap
+                            mapContainerStyle={{
+                                width: "80%",
+                                height: "80%", // Đảm bảo bản đồ chiếm toàn bộ không gian
+                            }}
+                            center={position}
+                            zoom={15}
+                        >
+                            <Marker position={position} />
+                        </GoogleMap>
+                    </LoadScript>
+                </div>
+            )}
         </div>
      );
 }

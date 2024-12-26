@@ -106,6 +106,7 @@
     width: 150px;
     height: 9rem;
     position: absolute;
-    top: 1005px;
-    right: 35px;
+    top: 980px;
+    right: 25px;
+    border-radius: 20px;
   }

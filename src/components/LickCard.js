@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import "./LickCard.css";
+import "./Lickcard.css";
 
 function LickCard() {
     const [Liked, setLiked] = useState(false);
@@ -21,9 +21,8 @@ function LickCard() {
         }
         setLiked(!Liked);
     };
-
     const handleMapClick = () => {
-        setShowMap(true); // Hiển thị bản đồ khi nhấn vào icon map
+        setShowMap((prev) => !prev); // Toggle trạng thái hiển thị bản đồ
     };
 
     return (

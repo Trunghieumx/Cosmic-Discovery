@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    bottom: 300px;
+    bottom: 250px;
     left: 50px;
 }
 
@@ -69,7 +69,7 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: 500px;
+    bottom: 430px;
     right: 50px;
 }
 
@@ -107,7 +107,7 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: 300px;
+    bottom: 270px;
     left: 830px;
 }
 

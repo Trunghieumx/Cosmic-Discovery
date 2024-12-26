@@ -1,7 +1,26 @@
+import { useState } from "react";
 import './SouthernCard.css'
 function SouthernCard() {
+    const [Liked, setLiked] = useState(false);
+    const [Count, setCount] = useState(8386);
+    const handleLikeToggle = () => {
+        if (Liked) {
+            setCount((prev) => prev - 1);
+        } else {
+            setCount((prev) => prev + 1);
+        }
+        setLiked(!Liked);
+    };
     return ( 
         <div className="south-card">
+             <div className="like" onClick={handleLikeToggle}>
+                {Liked ? (
+                    <img src="./images/Heartfill.png" alt="Liked" />
+                ) : (
+                    <img src="./images/Heart.png" alt="Not liked" />
+                )}
+                <span className="count">{Count}</span>
+            </div>
         <div className="cs-container">
         </div>
         <div className="infor1">

@@ -13,6 +13,18 @@
     background-size: cover;
     background-position: center;
 }
+.map-container {
+    width: 100%;
+    height: 100%; /* Chiếm toàn bộ chiều cao */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền mờ cho bản đồ */
+    border-radius: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .ob-container {
     width: 100%;
     height: 100%;
@@ -107,8 +119,8 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 20px;
+    left: 300px;
 }
 
 .keck-card>.infor3>.title {
@@ -145,14 +157,14 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: 50px;
+    top: 270px;
     right:50px;
     
 }
 
 .keck-card>.infor4>.title {
     width: auto;
-    text-align: center;
+    text-align: right;
     font-family: "Abril Fatface";
     font-size: 1.475rem;
     font-style: normal;
@@ -169,7 +181,7 @@
 .keck-card>.infor4>.content {
     width: 400px;
     color: #FFF;
-    text-align: center;
+    text-align: right;
     font-family: "Abril Fatface";
     font-size: 1.225rem;
     font-style: normal;

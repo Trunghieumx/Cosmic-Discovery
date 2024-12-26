@@ -6,21 +6,21 @@
     background: linear-gradient(90deg, rgba(255, 138, 0, 0.00) 0%, rgba(216, 141, 28, 0.25) 50%, rgba(255, 138, 0, 0.00) 100%);
 }
 .paranalcard {
-    display: flex;
-    width: 28.125rem;
-    height: 15.625rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 1.875rem;
-    border: 3px solid #FFA800;
-    background: rgba(0, 0, 0, 0.60);
-    backdrop-filter: blur(20px);
-    border-radius: 1.25rem;
-  background: linear-gradient(90deg, rgba(255, 199, 0, 0.00) 0%, rgba(255, 153, 0, 0.20) 50%, rgba(255, 199, 0, 0.00) 100%);
-    margin-left: 20px;
-    margin-top: 50px;
+  display: flex;
+  width: 28.125rem;
+  height: 15.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1.875rem;
+  border: 3px solid #2369B8;
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(20px);
+  border-radius: 1.25rem;
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.00) 0%, rgba(0, 102, 255, 0.25) 50%, rgba(0, 102, 255, 0.00) 100%);
+  margin-left: 20px;
+  margin-top: 10px;
   }
   .paranalcard> .tittle{
     width: auto;
@@ -86,8 +86,9 @@
     width: 9.375rem;
       height: 9rem;
       position: absolute;
-      top: 380px;
-      right: 35px;
+      top: 990px;
+      right: 20px;
+      border-radius: 20px;
     }
     .textfill {
         color: #FFF;

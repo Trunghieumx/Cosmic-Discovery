@@ -101,10 +101,10 @@
     background: #FFF;
 }
 .keck>.content-img {
-    width: 13rem;
-    height: 13rem;
-    object-fit:fill ;
-    position: absolute;
-    top: 980px;
-    right: 25px;
+    width: 9.375rem;
+      height: 9rem;
+      position: absolute;
+      top: 660px;
+      right: 20px;
+      border-radius: 20px;
 }

@@ -1,4 +1,7 @@
 import './Paranal.css'
+import img from '../assets/image/Paranal.jpg'
+import ic1 from '../assets/image/iconearth.png'
+import ic2 from '../assets/image/Vector.png'
 function Paranal({ onExplore }) {
     return ( 
         <>
@@ -19,14 +22,14 @@ function Paranal({ onExplore }) {
               <div>
                 <div className="explorebutton" onClick={onExplore}>
                   <div className="wrapicon">
-                    <img src="../assets/image/iconearth.png" alt="icon" />
+                    <img src={ic1} alt="icon" />
                   </div>
                   <div className="textfill">EXPLORE</div>
-                  <img src="../assets/image/Vector.png" alt="icon"></img>
+                  <img src={ic2} alt="icon"></img>
                 </div>
               </div>
             </div>
-            <img className="content-img" src="../assets/image/Paranal.jpg" alt="Paranal" />
+            <img className="content-img" src={img} alt="Paranal" />
           </div>
 
         </>

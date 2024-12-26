@@ -13,6 +13,18 @@
     background-size: cover;
     background-position: center;
 }
+.map-container {
+    width: 100%;
+    height: 100%; /* Chiếm toàn bộ chiều cao */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền mờ cho bản đồ */
+    border-radius: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .ob-container {
     width: 100%;
     height: 100%;
@@ -31,7 +43,7 @@
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top:100px;
+    top:140px;
     left: 50px;
 }
 
@@ -69,7 +81,7 @@
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 100px;
+    top: 150px;
     right: 50px;
 }
 

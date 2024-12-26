@@ -25,9 +25,14 @@ import SouthernCard from './SouthernCard';
 import HalleyCard from './HalleyCard';
 import HaleCard from './HaleCard';
 import ObserCard from './ObserCard';
+import Constellationcard from './Constellationcard'
+import Palomar from './Palomar';
+import PalomarCard from './PalomarCard';
+import Kitt from './Kitt';
+import KittCard from './KittCard';
 
 function Observatory() {
-    const [activeContent, setActiveContent] = useState('LickCard');
+    const [activeContent, setActiveContent] = useState('ObserCard');
     const [fadeClass, setFadeClass] = useState('');
     const [showObservatories, setShowObservatories] = useState(true); // Thêm state để điều khiển việc hiển thị danh sách
 
@@ -48,14 +53,18 @@ function Observatory() {
     };
 
     const toggleLists = (type) => {
-        if (type === 'observatories') {
-            setShowObservatories(true);
-        } else if (type === 'constellations') {
-            setShowObservatories(false);
-            setActiveContent('Observatory'); // Thêm điều này để hiển thị ObserCard khi nhấn vào "Constellations"
-        }
+        setFadeClass('fade-out'); // Bắt đầu hiệu ứng fade-out
+        setTimeout(() => {
+            if (type === 'observatories') {
+                setShowObservatories(true);
+                setActiveContent('ObserCard'); // Đặt nội dung mặc định cho Observatory
+            } else if (type === 'constellations') {
+                setShowObservatories(false);
+                setActiveContent('Constellationcard'); // Đặt nội dung mặc định cho Constellation
+            }
+            setFadeClass('fade-in'); // Kết thúc hiệu ứng fade-in
+        }, 300);
     };
-
     return ( 
         <div className="container">
             <SolarPanel onExplore={() => handleChangeContent('SolarSystem')} />
@@ -71,6 +80,8 @@ function Observatory() {
                             <Arecibo onExplore={() => handleChangeContent('AreciboCard')} />
                             <Keck onExplore={() => handleChangeContent('KeckCard')} />
                             <Paranal onExplore={() => handleChangeContent('ParanalCard')} />
+                            <Palomar onExplore={() => handleChangeContent('PalomarCard')} />
+                            <Kitt onExplore={() => handleChangeContent('KittCard')} />
                         </div>
                     ) : (
                         <div className="obser-list">
@@ -84,13 +95,16 @@ function Observatory() {
                     )}
                 </div>
                 <div className={`infor ${fadeClass}`}>
+                {activeContent === 'ObserCard' && <ObserCard />}
                     {activeContent === 'LickCard' && <LickCard />}
                     {activeContent === 'AreciboCard' && <AreciboCard />}
                     {activeContent === 'KeckCard' && <KeckCard />}
                     {activeContent === 'ParanalCard' && <ParanalCard />}
+                    {activeContent === 'PalomarCard' && <PalomarCard />}
+                    {activeContent === 'KittCard' && <KittCard />}
                     {activeContent === 'SolarSystem' && <SolarSystemView />}
                     {/* constellations */}
-                    {activeContent === 'Observatory' && <ObserCard />} {/* Thêm điều kiện này */}
+                    {activeContent === 'Constellationcard' && <Constellationcard/>} {/* Thêm điều kiện này */}
                     {activeContent === 'OrionCard' && <OrionCard />}
                     {activeContent === 'UrsaCard' && <UrsaCard />}
                     {activeContent === 'ScorpioCard' && <ScorpioCard />}
