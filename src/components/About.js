@@ -5,19 +5,18 @@ import Navbar from "./Navbar";
 import SolarPanel from "./SolarPanel";
 import SolarSystemView from './SolarSystemView';
 import AboutCard from './AboutCard';
-import Contact from './Contact'
 
-
-function Observatory() {
+function About() {
+    const [fadeClass, setFadeClass] = useState('fade-in');
     const [activeContent, setActiveContent] = useState('AboutCard');
-    const [fadeClass, setFadeClass] = useState('');
-    const [showObservatories, setShowObservatories] = useState(true); 
+    const [showSolarSystem, setShowSolarSystem] = useState(false);
 
-    const handleChangeContent = (content) => {
+    const handleChangeContent = () => {
         setFadeClass('fade-out');
         setTimeout(() => {
-            setActiveContent(content); 
-            setFadeClass('fade-in'); 
+            setShowSolarSystem(!showSolarSystem);
+            setActiveContent(showSolarSystem ? 'AboutCard' : 'SolarSystem');
+            setFadeClass('fade-in');
         }, 300);
     };
 
@@ -29,33 +28,15 @@ function Observatory() {
         }
     };
 
-    const toggleLists = (type) => {
-        setFadeClass('fade-out'); 
-        setTimeout(() => {
-            if (type === 'abouts') {
-                setShowObservatories(true);
-                setActiveContent('AboutCard'); 
-            } else if (type === 'contacts') {
-                setShowObservatories(false);
-                setActiveContent('Contact'); 
-            }
-            setFadeClass('fade-in'); 
-        }, 300);
-    };
     return ( 
         <div className="container">
-           <div className='solar'> <SolarPanel onExplore={() => handleChangeContent('SolarSystem')} /></div>
+            <div className='solar'>
+                <SolarPanel onExplore={handleChangeContent} />
+            </div>
             <div className="content-container">
-            
                 <div className={`infor ${fadeClass}`}>
-                <div className="button-container">
-                        <div className="button" onClick={() => toggleLists('abouts')}>About us</div>
-                        <div className="button" onClick={() => toggleLists('contacts')}>Contact us</div>
-                    </div>
                     {activeContent === 'AboutCard' && <AboutCard />}
                     {activeContent === 'SolarSystem' && <SolarSystemView />}
-                    {activeContent === 'Contact' && <Contact/>} 
-
                 </div>
             </div>
             <Navbar onSelectIcon={handleSelectIcon} />
@@ -63,4 +44,4 @@ function Observatory() {
     );
 }
 
-export default Observatory;
+export default About;
