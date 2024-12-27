@@ -11,10 +11,9 @@ import Mercury from './components/Mercury';
 import JupiterCard from './components/JupiterCard';
 import EarthCard from './components/EarthCard';
 import BookSearch from './BookSearch';
-import ObserCard from './components/ObserCard';
-import Arecibo from './components/Arecibo';
 import Observatory from './components/Observatory';
 import YouTubeVideos from './YouTubeVideos';
+import About from './components/About';
 
 function App() {
   
@@ -26,8 +25,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/obser" element={<Observatory />} />
         <Route path="/explore" element={<BookSearch />} />
+
       </Routes>
-  
+
     </>
   );
 }

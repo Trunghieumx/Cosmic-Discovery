@@ -34,7 +34,7 @@ import KittCard from './KittCard';
 function Observatory() {
     const [activeContent, setActiveContent] = useState('ObserCard');
     const [fadeClass, setFadeClass] = useState('');
-    const [showObservatories, setShowObservatories] = useState(true); // Thêm state để điều khiển việc hiển thị danh sách
+    const [showObservatories, setShowObservatories] = useState(true); 
 
     const handleChangeContent = (content) => {
         setFadeClass('fade-out');
@@ -53,16 +53,16 @@ function Observatory() {
     };
 
     const toggleLists = (type) => {
-        setFadeClass('fade-out'); // Bắt đầu hiệu ứng fade-out
+        setFadeClass('fade-out'); 
         setTimeout(() => {
             if (type === 'observatories') {
                 setShowObservatories(true);
-                setActiveContent('ObserCard'); // Đặt nội dung mặc định cho Observatory
+                setActiveContent('ObserCard'); 
             } else if (type === 'constellations') {
                 setShowObservatories(false);
-                setActiveContent('Constellationcard'); // Đặt nội dung mặc định cho Constellation
+                setActiveContent('Constellationcard'); 
             }
-            setFadeClass('fade-in'); // Kết thúc hiệu ứng fade-in
+            setFadeClass('fade-in'); 
         }, 300);
     };
     return ( 
