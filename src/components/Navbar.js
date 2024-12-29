@@ -16,6 +16,8 @@ function Navbar({ onSelectIcon }) {
       navigate('/'); // Điều hướng về Home chính
     } else if (iconName === 'obser') {
       navigate('/obser'); // Điều hướng đến trang Observatory
+    } else if (iconName === 'astronut') {
+      navigate('/astronut'); // Điều hướng đến trang Astronaut
     } else {
       onSelectIcon && onSelectIcon(iconName); // Xử lý icon khác nếu cần
     }

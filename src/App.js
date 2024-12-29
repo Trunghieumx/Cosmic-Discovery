@@ -25,7 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/obser" element={<Observatory />} />
         <Route path="/explore" element={<BookSearch />} />
-
+        <Route path="/astronut" element={<About />} />
       </Routes>
 
     </>
